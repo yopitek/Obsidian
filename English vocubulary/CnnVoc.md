@@ -1,17 +1,8 @@
-START
-{Note Type}
-{Note Fields}
-Tags: END 
+agitator #flashcard  
+煽動者
 
-As an example: 
-START Basic 
-This is a test. 
-Back: 
-Test successful! 
-Tags: Testing 
-END
-
-
-aaa #flashcard 
-bbb
-<!--ID: 1746432812587-->
+xenophobic #flashcard
+仇外的；排外的
+having or showing a dislike of or prejudice against people from other countries
+The campaign was criticized as being xenophobic.
+His speech was full of xenophobic remarks.

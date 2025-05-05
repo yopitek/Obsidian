@@ -51,12 +51,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "English vocubulary/CnnVoc.md",
+                "file": "Obsidian/Obsidian to Anki (plugin).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "CnnVoc"
+              "title": "Obsidian to Anki (plugin)"
             }
           },
           {
@@ -252,8 +252,9 @@
   "active": "7e3653b27e734e60",
   "lastOpenFiles": [
     "Obsidian/OtA demo - apple.md",
-    "Obsidian/Obsidian to Anki (plugin).md",
     "English vocubulary/CnnVoc.md",
+    "English vocubulary/CnnVoc.md",
+    "Obsidian/Obsidian to Anki (plugin).md",
     "English vocubulary/Demo flash card.md",
     "Daily Note folder/2025.05.02.md",
     "English vocubulary/Test voc.md",
