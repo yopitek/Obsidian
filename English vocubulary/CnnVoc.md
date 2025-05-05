@@ -59,3 +59,9 @@ chime
 例句2: We could hear the church bells chime in the distance.  
 <!--ID: 1746428962833-->
 
+agitator  
+**美式音標:** /ˈædʒəteɪtər/ #flashcard  
+**英中：** 鼓動者；煽動者  
+**英英:** someone who encourages people to work towards changing something in society – used to show disapproval  
+**例句1:** The political agitator was arrested for inciting violence during the protest.  
+**例句2:** She was known as an agitator who always challenged the status quo.
