@@ -111,16 +111,20 @@ sentence:The terms of the treaty were dictated by the victors.
 <!--ID: 1746437648262-->
 
 egg on  
-/ɛɡ ɑːn/ #flashcard  
+/ɛɡ ɑːn/ #flashcard 
 煽動；慫恿  
 to encourage someone to do something, especially something that they should not do  
 sentence:He didn't want to fight, but his friends egged him on.
+<!--ID: 1746437939452-->
+
 
 helm  
-/hɛlm/ #flashcard  
+/hɛlm/ #flashcard 
 舵；領導地位 (常用於at the helm)  
 if someone is at the helm, they are in control of an organization  
 sentence:She has been at the helm of the company for five years.
+<!--ID: 1746437944397-->
+
 
 heterosexual  
 /ˌhɛtəroʊˈsɛkʃuəl/ #flashcard  
