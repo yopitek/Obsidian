@@ -1,4 +1,3 @@
-  
 
 agitator #flashcard  
 美式音標: /ˈædʒɪˌteɪtər/  
