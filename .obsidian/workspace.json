@@ -51,12 +51,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Obsidian/Obsidian to Anki (plugin).md",
+                "file": "English vocubulary/CNN words.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Obsidian to Anki (plugin)"
+              "title": "CNN words"
             }
           }
         ],
@@ -151,12 +151,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Obsidian/Obsidian to Anki (plugin).md",
+                "file": "English vocubulary/CNN words.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Obsidian to Anki (plugin)"
+              "title": "Outgoing links from CNN words"
             }
           },
           {
@@ -180,7 +180,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#tag",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -237,10 +237,11 @@
   },
   "active": "b151d96869291944",
   "lastOpenFiles": [
-    "Template/閱讀筆記模板.md",
-    "Obsidian/Obsidian to Anki (plugin).md",
-    "Obsidian/How to.md",
+    "English vocubulary/Test voc.md",
     "English vocubulary/CNN words.md",
+    "Obsidian/Obsidian to Anki (plugin).md",
+    "Template/閱讀筆記模板.md",
+    "Obsidian/How to.md",
     "Daily Note folder/2025.05.02.md",
     "Template/Diary.md",
     "Untitled.canvas",

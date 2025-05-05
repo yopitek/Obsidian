@@ -30,7 +30,13 @@
       "Daily Note folder/Attachement": "",
       "外/Maps": "",
       "外/Notes": "",
-      "English vocubulary": "CNN VOC01"
+      "English vocubulary": "CNN VOC",
+      "Anki": "",
+      "Notion": "",
+      "Obsidian": "",
+      "Python": "",
+      "Swift": "",
+      "Linux": ""
     },
     "FOLDER_TAGS": {
       "Template": "",
@@ -42,7 +48,13 @@
       "Daily Note folder/Attachement": "",
       "外/Maps": "",
       "外/Notes": "",
-      "English vocubulary": ""
+      "English vocubulary": "",
+      "Anki": "",
+      "Notion": "",
+      "Obsidian": "",
+      "Python": "",
+      "Swift": "",
+      "Linux": ""
     },
     "Syntax": {
       "Begin Note": "START",
@@ -56,7 +68,7 @@
     },
     "Defaults": {
       "Scan Directory": "",
-      "Tag": "#Obsidian_to_Anki",
+      "Tag": "Obsidian_to_Anki",
       "Deck": "Default",
       "Scheduling Interval": 0,
       "Add File Link": true,
@@ -77,7 +89,13 @@
     "Template/Diary.md": "f9f8f3842948943e1f9720d594c7c06a",
     "Template/callout重點摘要.md": "6b370e261258331ac951c00514744828",
     "Template/callout 老師的話.md": "506f9597b78c2736f956ed3391b96dcf",
-    "English vocubulary/CNN words.md": "5b4dcdb3e60f0620dc27a6c11f36126f"
+    "English vocubulary/CNN words.md": "b8006f2173b19069d720b992aa5f2deb",
+    "Obsidian/Obsidian to Anki (plugin).md": "f201d4c7bb790e20794a55faa740ad3a",
+    "Obsidian/How to.md": "f56ed48431b5155d69031f89e51461bf",
+    "Notion/notion note.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "Anki/Anki note.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "Template/閱讀筆記模板.md": "4bc93e302b311221b3722f609f527dee",
+    "English vocubulary/Test voc.md": "89ea05d1579a6954a8b56a20595fada8"
   },
   "fields_dict": {
     "Basic": [
