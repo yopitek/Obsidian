@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "English vocubulary/CNN words.md",
+                "file": "study note/test.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "CNN words"
+              "title": "test"
             }
           }
         ]
@@ -190,7 +190,6 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "remotely-save:Remotely Save": false,
       "publish:Publish changes...": false,
       "obsidian-to-anki-plugin:Obsidian_to_Anki - Scan Vault": false,
       "obsidian-git:Open Git source control": false
@@ -198,23 +197,23 @@
   },
   "active": "6d5fa5298f4609e3",
   "lastOpenFiles": [
+    "Reading note/電腦軟體程式/swift",
+    "Reading note/電腦軟體程式/python",
+    "Reading note/電腦軟體程式/Obsidian",
+    "Reading note/電腦軟體程式/Notion",
+    "Reading note/電腦軟體程式/Anki",
+    "Reading note/電腦軟體程式",
+    "Reading note/教育學習",
+    "Reading note/投資理財",
+    "Reading note",
+    "Daily Note folder/2025.05.02.md",
+    "English vocubulary/CNN words.md",
     "讀書筆記/投資理財",
     "讀書筆記/電腦軟體程式/python",
-    "讀書筆記/電腦軟體程式/swift",
-    "讀書筆記/電腦軟體程式/Anki",
-    "讀書筆記/電腦軟體程式/Notion",
-    "讀書筆記/電腦軟體程式/Obsidian",
-    "讀書筆記/電腦軟體程式",
-    "讀書筆記/教育學習",
-    "讀書筆記",
     "study note/test.md",
-    "English vocubulary/CNN words.md",
-    "Daily Note folder/2025.05.02.md",
     "Untitled.canvas",
     "Daily Note folder/截圖 2025-05-02 上午9.40.12.png",
     "Daily Note folder/Attachement/截圖 2025-05-02 上午9.40.12.png",
-    "Daily Note folder/Attachement",
-    "外/Notes",
     "Template/Diary.md",
     "Daily Note folder/2025-05-02.md",
     "Template/callout 老師的話.md",
