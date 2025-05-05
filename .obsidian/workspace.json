@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Template/閱讀筆記模板.md",
+                "file": "study note/test.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "閱讀筆記模板"
+              "title": "test"
             }
           }
         ]
@@ -197,23 +197,22 @@
   },
   "active": "6d5fa5298f4609e3",
   "lastOpenFiles": [
+    "Template/閱讀筆記模板.md",
+    "Reading note",
     "閱讀筆記",
     "Template/callout 老師的話.md",
-    "Template/閱讀筆記模板.md",
     "Template/閱讀筆記模板/Untitled.md",
     "study note/test.md",
     "Template/閱讀筆記模板",
     "Template/Diary.md",
     "Template/callout重點摘要.md",
-    "閱讀筆記/電腦軟體程式/swift",
-    "閱讀筆記/電腦軟體程式/python",
-    "閱讀筆記/電腦軟體程式/Obsidian",
-    "閱讀筆記/電腦軟體程式/Notion",
-    "閱讀筆記/電腦軟體程式/Anki",
-    "閱讀筆記/電腦軟體程式",
-    "閱讀筆記/教育學習",
-    "閱讀筆記/投資理財",
-    "reading",
+    "study note/電腦軟體程式/swift",
+    "study note/電腦軟體程式/python",
+    "study note/電腦軟體程式/Obsidian",
+    "study note/電腦軟體程式/Notion",
+    "study note/電腦軟體程式/Anki",
+    "study note/電腦軟體程式",
+    "study note/教育學習",
     "Daily Note folder/2025.05.02.md",
     "English vocubulary/CNN words.md",
     "Untitled.canvas",
