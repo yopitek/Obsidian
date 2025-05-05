@@ -51,12 +51,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Obsidian/How to.md",
+                "file": "Obsidian/Obsidian to Anki (plugin).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "How to"
+              "title": "Obsidian to Anki (plugin)"
             }
           }
         ],
@@ -151,12 +151,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Obsidian/How to.md",
+                "file": "Obsidian/Obsidian to Anki (plugin).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from How to"
+              "title": "Outgoing links from Obsidian to Anki (plugin)"
             }
           },
           {
@@ -238,8 +238,12 @@
   "active": "b151d96869291944",
   "lastOpenFiles": [
     "Template/閱讀筆記模板.md",
-    "Untitled.canvas",
+    "Obsidian/Obsidian to Anki (plugin).md",
     "Obsidian/How to.md",
+    "English vocubulary/CNN words.md",
+    "Daily Note folder/2025.05.02.md",
+    "Template/Diary.md",
+    "Untitled.canvas",
     "Anki/Anki note.md",
     "Linux",
     "Swift",
@@ -255,11 +259,8 @@
     "Template/callout 老師的話.md",
     "Template/閱讀筆記模板/Untitled.md",
     "Template/閱讀筆記模板",
-    "Template/Diary.md",
     "Template/callout重點摘要.md",
     "study note/swift",
-    "Daily Note folder/2025.05.02.md",
-    "English vocubulary/CNN words.md",
     "Daily Note folder/截圖 2025-05-02 上午9.40.12.png",
     "Daily Note folder/Attachement/截圖 2025-05-02 上午9.40.12.png",
     "Daily Note folder/2025-05-02.md",
