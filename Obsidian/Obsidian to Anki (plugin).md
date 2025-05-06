@@ -81,6 +81,8 @@ Custom Regexp 設定
 ^([^\n]+)\n(/[^#\n]+)\s+#flashcard\s*\n([\s\S]+?)(?=^(?:[^\n]+\n/[^#\n]+\s+#flashcard|\Z))
 
 
+^([^\n]+)\s+#flashcard\s*\n([\s\S]+?)
+
 
 ```
 Front template 

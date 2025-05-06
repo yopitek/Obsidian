@@ -1,7 +1,7 @@
 {
   "settings": {
     "CUSTOM_REGEXPS": {
-      "Basic": "^([^\\n]+)\\n(/[^#\\n]+)\\s+#flashcard\\s*\\n([\\s\\S]+?)(?=^(?:[^\\n]+\\n/[^#\\n]+\\s+#flashcard|\\Z))",
+      "Basic": "^([^\\n]+)\\s+#flashcard\\s*\\n([\\s\\S]+?)",
       "Basic (and reversed card)": "",
       "Basic (optional reversed card)": "",
       "Basic (type in the answer)": "",
