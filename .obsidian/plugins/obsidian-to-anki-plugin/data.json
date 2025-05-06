@@ -1,7 +1,7 @@
 {
   "settings": {
     "CUSTOM_REGEXPS": {
-      "Basic": "^(.+)\\n.+?#flashcard\\s*\\n((?:.+\\n?){2,})",
+      "Basic": "^(?!<!--ID:)([^\\n]+)\\n(?!<!--ID:).*?#flashcard.*\\n([\\s\\S]+?)(?=^(?!<!--ID:)[^\\n]+\\n(?!<!--ID:).*?#flashcard|\\Z)",
       "Basic (and reversed card)": "",
       "Basic (optional reversed card)": "",
       "Basic (type in the answer)": "",
@@ -91,7 +91,7 @@
     "Obsidian/Obsidian to Anki (plugin).md": "f201d4c7bb790e20794a55faa740ad3a",
     "Obsidian/How to.md": "3a12785aa08a039b28b37ccde7d08a8f",
     "Notion/notion note.md": "d41d8cd98f00b204e9800998ecf8427e",
-    "English vocubulary/CnnVoc.md": "4a64227b5c34c10398c60bc746c9500d",
+    "English vocubulary/CnnVoc.md": "b72573c3b42321cc786a99bb89cac21d",
     "English vocubulary/Demo flash card.md": "4d275a54bc9a66899fc33ff4fc778db8",
     "Daily Note folder/2025.05.02.md": "da7d4f4a9a0c185e5bbfd100eb179dd6",
     "Anki/Anki note.md": "d41d8cd98f00b204e9800998ecf8427e",
