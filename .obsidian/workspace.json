@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "English vocubulary/CnnVoc.md",
+                "file": "Obsidian/Obsidian to Anki (plugin).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "CnnVoc"
+              "title": "Obsidian to Anki (plugin)"
             }
           }
         ],
@@ -213,8 +213,8 @@
   },
   "active": "3cdc2ded567d3a6b",
   "lastOpenFiles": [
-    "English vocubulary/test.md",
     "English vocubulary/CnnVoc.md",
+    "English vocubulary/test.md",
     "Obsidian/Obsidian to Anki (plugin).md",
     "English vocubulary/mmmm.md",
     "Daily Note folder/2025.05.02.md",
