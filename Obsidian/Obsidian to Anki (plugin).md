@@ -73,3 +73,9 @@ aliases:
 - 他住在{1:倫敦::城市名稱}的{1:貝克街::街道名稱}，興趣是{2:拉小提琴::樂器} #clozecard 
 - Sherlock Holmes
 ```
+
+
+
+Custom Regexp 設定
+多行單字卡
+^([^\n]+)\n(/[^#\n]+)\s+#flashcard\s*\n([\s\S]+?)(?=^(?:[^\n]+\n/[^#\n]+\s+#flashcard|\Z))
