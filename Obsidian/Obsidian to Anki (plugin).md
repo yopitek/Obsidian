@@ -79,3 +79,75 @@ aliases:
 Custom Regexp 設定
 多行單字卡
 ^([^\n]+)\n(/[^#\n]+)\s+#flashcard\s*\n([\s\S]+?)(?=^(?:[^\n]+\n/[^#\n]+\s+#flashcard|\Z))
+
+
+
+```
+Front template 
+{{Front}}
+```
+
+```
+Back  template
+{{FrontSide}}
+<hr id=answer>
+{{Back}}
+<br><br><br>
+<div class="obsidian-meta">{{Obsidian Link}} {{Obsidian Context}}</div>
+```
+
+CSS style 
+```
+.card {
+
+font-family: "Avenir", sans-serif;
+
+font-size: 30px;
+
+text-align: center;
+
+color: #1E2A38; /* 深藍灰字體 */
+
+background-color: #F0F6FF; /* 柔和藍底 */
+
+border-radius: 16px;
+
+padding: 20px;
+
+box-shadow: 0 4px 12px rgba(30, 42, 56, 0.1); /* 柔和陰影 */
+
+}
+
+.card-content {
+
+padding: 20px;
+
+font-size: 30px;
+
+line-height: 1.6;
+}
+
+.back {
+
+text-align: center;
+
+font-size: 30px;
+
+line-height: 1.6;  
+
+}  
+
+.obsidian-meta {
+
+font-size: 20px;
+
+color: #6C7A89; /* 柔和灰藍色 */
+
+margin-top: 40px;
+
+text-align: left;
+
+font-style: italic;
+
+}
+```
