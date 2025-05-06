@@ -1,3 +1,5 @@
 {
-  "folder": "Template"
+  "folder": "Template",
+  "dateFormat": "2025-05-06",
+  "timeFormat": "23:59"
 }
