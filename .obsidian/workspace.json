@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Obsidian/Obsidian to Anki (plugin).md",
+                "file": "English vocubulary/CnnVoc.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Obsidian to Anki (plugin)"
+              "title": "CnnVoc"
             }
           }
         ],
@@ -213,6 +213,9 @@
   },
   "active": "3cdc2ded567d3a6b",
   "lastOpenFiles": [
+    "Template/閱讀筆記模板.md",
+    "SGI Book",
+    "Obsidian/Obsidian to Anki (plugin).md",
     "魯冰花(1989年同名電影主題曲)回味好聽老歌憶童年!.png",
     "魯冰花(1989年同名電影主題曲)回味好聽老歌憶童年!.mp4",
     "魯冰花(1989年同名電影主題曲)回味好聽老歌憶童年!.temp.mp4",
@@ -223,11 +226,9 @@
     "魯冰花(1989年同名電影主題曲)回味好聽老歌憶童年!.f234.mp4.part",
     "魯冰花(1989年同名電影主題曲)回味好聽老歌憶童年!.f234.mp4.ytdl",
     "魯冰花(1989年同名電影主題曲)回味好聽老歌憶童年!.f270.mp4",
-    "魯冰花(1989年同名電影主題曲)回味好聽老歌憶童年!.f270.mp4.part-Frag47.part",
     "魯冰花(1989年同名電影主題曲)回味好聽老歌憶童年!.webp",
     "English vocubulary/CnnVoc.md",
     "English vocubulary/test.md",
-    "Obsidian/Obsidian to Anki (plugin).md",
     "English vocubulary/mmmm.md",
     "Daily Note folder/2025.05.02.md",
     "Obsidian/How to.md",
@@ -235,7 +236,6 @@
     "English vocubulary/Test CNN.md",
     "English vocubulary/Demo flash card.md",
     "English vocubulary/Test voc.md",
-    "Template/閱讀筆記模板.md",
     "Template/Diary.md",
     "Untitled.canvas",
     "Anki/Anki note.md",
@@ -256,7 +256,6 @@
     "Template/截圖 2025-05-01 上午11.43.07.png",
     "Template/截圖 2025-05-02 上午10.55.35.png",
     "study note/截圖 2025-05-02 上午11.06.01 1.png",
-    "study note/截圖 2025-05-02 上午11.06.01.png",
     "Untitled 2/Untitled.canvas"
   ]
 }
