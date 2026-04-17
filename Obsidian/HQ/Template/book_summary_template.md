@@ -1,5 +1,5 @@
 book: 
-auther:
+author:
 core concept:
 my thought:
 related note:

@@ -29,4 +29,11 @@ summary: 一句话摘要
 ## tags 
 - 按領域：#tech #business #reading #life
 - 按狀態：#todo #in-progress #done
-- 按類型：#idea #reference #project
+- 按類型：#idea #reference #project 
+
+
+工作原則:
+Think Before Coding → **在寫代碼前先思考，阻斷錯誤假設和遺漏的權衡**
+Simplicity First → **簡單優先，阻止過度工程化和臃腫的抽象**
+Surgical Changes → **精準修改，只動需要改的代碼，不碰其他**
+Goal-Driven Execution → **目標驅動，先寫測試，明確驗證標準**
