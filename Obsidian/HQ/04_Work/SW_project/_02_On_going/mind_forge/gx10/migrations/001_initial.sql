@@ -55,10 +55,11 @@ CREATE TABLE IF NOT EXISTS kal_jobs (
     updated_at      TIMESTAMPTZ NOT NULL DEFAULT now()
 );
 
--- HNSW index for dense similarity search
+-- HNSW index for dense similarity search (partial: skip unembedded rows)
 CREATE INDEX IF NOT EXISTS claims_embedding_hnsw
     ON claims USING hnsw (embedding vector_cosine_ops)
-    WITH (m = 16, ef_construction = 200);
+    WITH (m = 16, ef_construction = 200)
+    WHERE embedding IS NOT NULL;
 
 -- Trigram index for sparse/keyword search
 CREATE INDEX IF NOT EXISTS claims_content_trgm
