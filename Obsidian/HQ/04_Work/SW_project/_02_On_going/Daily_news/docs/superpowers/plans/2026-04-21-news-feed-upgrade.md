@@ -14,7 +14,9 @@
 
 ---
 
-## Phase 1: Daily Pipeline — Tech Blogs Tab
+## Phase 1: Daily Pipeline — Tech Logs Tab
+
+> ✅ PREP: Create test files locally first
 
 ---
 
