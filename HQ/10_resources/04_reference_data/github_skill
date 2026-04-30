@@ -1,0 +1,237 @@
+# 🤖 AI Agent Skills Registry (Structured for Sub-Agent System)
+
+---
+
+## 🧠 1. Orchestrator Agent（總指揮）
+
+負責任務拆解、流程設計、Agent 協作
+
+### Tools
+
+* https://github.com/wshobson/agents
+* https://github.com/msitarzewski/agency-agents
+* https://github.com/KimYx0207/agent-teams-playbook
+* https://github.com/alibaba/page-agent
+* https://github.com/accomplish-ai/accomplish
+* https://github.com/alirezarezvani/ClaudeForge
+
+---
+
+## 📚 2. Knowledge / Documentation Agent（知識管理）
+
+負責文件整理、知識庫、Spec、筆記
+
+### Tools
+
+* https://github.com/github/spec-kit
+* https://github.com/doggy8088/spec-kit
+* https://github.com/Fission-AI/OpenSpec
+* https://github.com/kepano/obsidian-skills
+* https://github.com/PleasePrompto/notebooklm-skill
+* https://github.com/obsidianmd/obsidian-clipper
+
+---
+
+## 💬 3. Prompt / LLM Optimization Agent（提示詞優化）
+
+負責 prompt engineering、LLM 輸出優化
+
+### Tools
+
+* https://github.com/f/awesome-chatgpt-prompts
+* http://prompts.chat/
+* https://github.com/linshenkx/prompt-optimizer
+* https://github.com/travisvn/awesome-claude-skills
+* https://github.com/BehiSecc/awesome-claude-skills
+
+---
+
+## 🔬 4. Research Agent（研究分析）
+
+負責資料分析、學術研究、自動化研究
+
+### Tools
+
+* https://github.com/dmquant/OpenResearch
+* https://dwzhu-pku.github.io/PaperBanana/
+
+---
+
+## 💻 5. Dev / Infra Agent（開發與基礎建設）
+
+負責開發工具、backend、infra
+
+### Tools
+
+* https://github.com/supabase/supabase
+* https://github.com/vercel-labs/agent-browser
+* https://github.com/lightpanda-io/browser
+* https://github.com/SuperCmdLabs/SuperCmd
+* https://github.com/alacritty/alacritty
+
+---
+
+## 🌐 6. Localization Agent（翻譯與多語）
+
+負責翻譯、跨語言處理
+
+### Tools
+
+* https://github.com/funstory-ai/BabelDOC
+* https://github.com/ssut/py-googletrans
+
+---
+
+## 📊 7. Visualization Agent（視覺化 / 設計）
+
+負責圖表、簡報、UI
+
+### Tools
+
+* https://github.com/antvis/Infographic
+* https://github.com/icip-cas/PPTAgent
+
+---
+
+## 🎬 8. Media Processing Agent（影音處理）
+
+負責影音生成、OCR、剪輯
+
+### Tools
+
+* https://github.com/FFmpeg/FFmpeg
+* https://github.com/yt-dlp/yt-dlp
+* https://github.com/hiroi-sora/Umi-OCR
+* https://github.com/remotion-dev/remotion
+* https://github.com/freestylefly/director_ai
+
+---
+
+## 📈 9. Finance / Trading Agent（金融交易）
+
+負責股票、量化、交易策略
+
+### Tools
+
+* https://github.com/ValueCell-ai/valuecell
+* https://github.com/Open-Dev-Society/OpenStock
+* https://github.com/whchien/ai-trader
+* https://github.com/ranaroussi/yfinance
+* https://github.com/microsoft/qlib
+* https://github.com/vnpy/vnpy
+* https://github.com/TauricResearch/TradingAgents
+
+---
+
+## 🪙 10. Crypto Agent（加密 / 預測市場）
+
+負責加密貨幣、交易機器人
+
+### Tools
+
+* https://github.com/ccxt/ccxt
+* https://github.com/freqtrade/freqtrade
+* https://github.com/hummingbot/hummingbot
+* https://github.com/Polymarket/py-clob-client
+* https://github.com/chainstacklabs/polymarket-alpha-bot
+
+---
+
+## 📣 11. Content Automation Agent（自媒體自動化）
+
+負責內容生成、發布、自動營運
+
+### Tools
+
+* https://github.com/harry0703/MoneyPrinterTurbo
+* https://github.com/linyqh/NarratoAI
+* https://github.com/Huanshere/VideoLingo
+* https://github.com/dreammis/social-auto-upload
+* https://github.com/white0dew/XiaohongshuSkills
+
+---
+
+## 💰 12. Indie Hacker / SaaS Agent（商業變現）
+
+負責產品化、變現、創業
+
+### Tools
+
+* https://github.com/easychen/opc-methodology
+* https://github.com/mezod/awesome-indie
+* https://github.com/wasp-lang/open-saas
+* https://github.com/nextjs/saas-starter
+* https://github.com/TryGhost/Ghost
+
+---
+
+## 🔍 13. Discovery Agent（專案探索）
+
+負責趨勢追蹤、repo discovery
+
+### Tools
+
+* https://github.com/OpenGithubs/github-weekly-rank
+* https://github.com/sansan0/TrendRadar
+
+---
+
+## 🧳 14. Remote Work Agent（遠端工作）
+
+負責工作機會、外包
+
+### Tools
+
+* https://github.com/lukasz-madon/awesome-remote-job
+* https://github.com/remoteintech/remote-jobs
+* https://github.com/engineerapart/TheRemoteFreelancer
+
+---
+
+## 🧩 15. Skill Library Agent（技能庫管理）
+
+負責 skills aggregation / registry
+
+### Tools
+
+* https://github.com/anthropics/skills
+* https://github.com/openai/skills
+* https://github.com/skillmatic-ai/awesome-agent-skills
+* https://github.com/vercel-labs/agent-skills
+* https://github.com/kirodotdev/powers
+
+---
+
+# ⚙️ Usage Pattern (for Agent System)
+
+```yaml
+agent_system:
+  orchestrator:
+    role: task_router
+
+  agents:
+    - name: research_agent
+      use: Research Agent
+
+    - name: trading_agent
+      use: Finance / Trading Agent
+
+    - name: content_agent
+      use: Content Automation Agent
+
+    - name: dev_agent
+      use: Dev / Infra Agent
+```
+
+---
+
+# ✅ 設計原則
+
+* 每個 Agent = 一個明確職能
+* 每個 Agent 對應一組 GitHub tools
+* 支援：
+
+  * multi-agent orchestration
+  * tool calling
+  * RAG indexing
+  * skill loading

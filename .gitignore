@@ -1,0 +1,7 @@
+.env
+.env.*
+.DS_Store
+.obsidian/workspace
+.obsidian/workspace.json
+node_modules/
+*.log

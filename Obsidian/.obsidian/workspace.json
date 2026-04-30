@@ -1,0 +1,240 @@
+{
+  "main": {
+    "id": "e039b4be27c9e539",
+    "type": "split",
+    "children": [
+      {
+        "id": "7d5e5a47c347a4f1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a2d2ed7a3fec887f",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "HQ/04_Work/02_Products/02_ALFA/power_point/AWUS036AXML/slide-deck/images/10-kali.png"
+              },
+              "icon": "lucide-image",
+              "title": "10-kali"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "6924e93d1effdc30",
+    "type": "split",
+    "children": [
+      {
+        "id": "141398b15b4c1e7c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "cdd209ef06333610",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "檔案瀏覽器"
+            }
+          },
+          {
+            "id": "32df63db2fda86d0",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜尋"
+            }
+          },
+          {
+            "id": "e074c54d98f7e00b",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "書籤"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 388.5
+  },
+  "right": {
+    "id": "aeef4024d4e6fc0d",
+    "type": "split",
+    "children": [
+      {
+        "id": "ef6c8b43967485dc",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c5dc23c0b1d082bc",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "五上社會/mindmap/2-2mindmap.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "2-2mindmap 的反向連結"
+            }
+          },
+          {
+            "id": "136aabc0369f6deb",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "五上社會/mindmap/2-2mindmap.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "2-2mindmap 的對外連結"
+            }
+          },
+          {
+            "id": "610cfbc6f6ae1a46",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "標籤"
+            }
+          },
+          {
+            "id": "abae5deaf4fbafbf",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "所有屬性"
+            }
+          },
+          {
+            "id": "a3841326acb1130f",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "五上社會/mindmap/2-2mindmap.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "2-2mindmap 的大綱"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:開啟快速切換": false,
+      "graph:查看關聯圖": false,
+      "canvas:建立新畫布": false,
+      "daily-notes:開啟今天的每日筆記": false,
+      "templates:插入模板": false,
+      "command-palette:開啟命令面板": false,
+      "bases:建立新的 base": false,
+      "terminal:Open terminal": false,
+      "obsidian-excalidraw-plugin:New drawing": false,
+      "templater-obsidian:Templater": false,
+      "daily-notes-editor:Open Daily Note Editor": false
+    }
+  },
+  "active": "a2d2ed7a3fec887f",
+  "lastOpenFiles": [
+    "HQ/04_Work/02_Products/02_ALFA/power_point/AWUS036AXML/slide-deck/images/04-speed-old.png",
+    "HQ/04_Work/02_Products/02_ALFA/power_point/AWUS036AXML/slide-deck/images/01-cover.png",
+    "HQ/04_WWork/02_Products/02_ALFA/power_point/AWUS036AXML/slide-deck/images/07-os.png",
+    "HQ/04_Work/02_Products/02_ALFA/power_point/AWUS036AXML/slide-deck/images/09-audience.png",
+    "HQ/04_Work/02_Products/02_ALFA/power_point/AWUS036AXML/slide-deck/images/10-kali.png",
+    "HQ/01_Daily_note/2026-04-24.md",
+    "HQ/04_Work/02_Products/02_ALFA/power_point/AWUS036AXML/slide-deck/images/08-advanced.png",
+    "HQ/04_Work/02_Products/02_ALFA/power_point/AWUS036AXML/slide-deck/images/06-hardware.png",
+    "HQ/04_Work/02_Products/02_ALFA/power_point/AWUS036AXML/slide-deck/images/05-speed.png",
+    "HQ/04_Work/02_Products/02_ALFA/power_point/AWUS036AXML/slide-deck/images/03-specs.png",
+    "HQ/04_Work/02_Products/02_ALFA/power_point/AWUS036AXML/slide-deck/images/02-features.png",
+    "HQ/04_Work/02_Products/02_ALFA/power_point/AWUS036AXML/slide-deck/images/04-speed.png",
+    "HQ/04_Work/02_Products/02_ALFA/power_point/AWUS036AXML/awus036axml_ppt_prompt.md",
+    "HQ/10_resources/baoyu-skills/skills/baoyu-url-to-markdown/scripts/lib/adapters/youtube/utils.ts",
+    "HQ/10_resources/baoyu-skills/skills/baoyu-url-to-markdown/scripts/lib/adapters/youtube/transcript.ts",
+    "HQ/10_resources/baoyu-skills/skills/baoyu-url-to-markdown/scripts/lib/adapters/youtube/index.ts",
+    "HQ/10_resources/baoyu-skills/skills/baoyu-url-to-markdown/scripts/lib/adapters/x/types.ts",
+    "HQ/10_resources/baoyu-skills/skills/baoyu-url-to-markdown/scripts/lib/adapters/x/thread.ts",
+    "HQ/10_resources/baoyu-skills/skills/baoyu-url-to-markdown/scripts/lib/adapters/x/thread-loader.ts",
+    "HQ/10_resources/baoyu-skills/skills/baoyu-url-to-markdown/scripts/lib/adapters/x/single.ts",
+    "HQ/10_resources/baoyu-skills/skills/baoyu-url-to-markdown/scripts/lib/adapters/x/shared.ts",
+    "HQ/10_resources/baoyu-skills/skills/baoyu-url-to-markdown/scripts/lib/adapters/x/session.ts",
+    "HQ/10_resources/baoyu-skills/skills/baoyu-url-to-markdown/scripts/lib/adapters/x/payloads.ts",
+    "HQ/10_resources/baoyu-skills/skills/baoyu-xhs-images/references/presets/warm.md",
+    "HQ/10_resources/baoyu-skills/skills/baoyu-xhs-images/references/workflows/prompt-assembly.md",
+    "HQ/10_resources/baoyu-skills/skills/baoyu-xhs-images/references/workflows/outline-template.md",
+    "HQ/10_resources/baoyu-skills/skills/baoyu-xhs-images/references/workflows/analysis-framework.md",
+    "HQ/10_resources/baoyu-skills/skills/baoyu-xhs-images/references/presets/study-notes.md",
+    "HQ/10_resources/baoyu-skills/skills/baoyu-xhs-images/references/presets/sketch-notes.md",
+    "HQ/10_resources/baoyu-skills/skills/baoyu-xhs-images/references/presets/screen-print.md",
+    "HQ/10_resources/baoyu-skills/skills/baoyu-xhs-images/references/presets/retro.md",
+    "HQ/10_resources/baoyu-skills/skills/baoyu-xhs-images/references/presets/pop.md",
+    "HQ/10_resources/baoyu-skills/skills/baoyu-xhs-images/references/presets/notion.md",
+    "HQ/10_resources/baoyu-skills/skills/baoyu-xhs-images/references/presets/minimal.md",
+    "HQ/10_resources/baoyu-skills/skills/baoyu-xhs-images/references/presets/fresh.md",
+    "HQ/10_resources/baoyu-skills/skills/baoyu-xhs-images/references/presets/cute.md",
+    "HQ/10_resources/baoyu-skills/skills/baoyu-xhs-images/references/presets/chalkboard.md",
+    "HQ/10_resources/baoyu-skills/skills/baoyu-xhs-images/references/presets/bold.md",
+    "HQ/10_resources/baoyu-skills/skills/baoyu-xhs-images/references/palettes/warm.md",
+    "HQ/10_resources/baoyu-skills/skills/baoyu-xhs-images/references/palettes/neon.md",
+    "HQ/10_resources/baoyu-skills/skills/baoyu-xhs-images/references/palettes/macaron.md",
+    "HQ/10_resources/baoyu-skills/skills/baoyu-xhs-images/references/elements/typography.md",
+    "HQ/10_resources/baoyu-skills/skills/baoyu-xhs-images/references/elements/image-effects.md",
+    "HQ/10_resources/baoyu-skills/skills/baoyu-xhs-images/references/elements/decorations.md",
+    "HQ/10_resources/baoyu-skills/skills/baoyu-xhs-images/references/elements/canvas.md",
+    "HQ/10_resources/baoyu-skills/skills/baoyu-xhs-images/references/config/watermark-guide.md",
+    "HQ/04_Work/02_Products/未命名.canvas",
+    "HQ/04_Work/SW_project/_02_On_going/未命名.canvas",
+    "HQ/04_Work/SW_project/_02_On_going/mind_forge/未命名.canvas"
+  ]
+}

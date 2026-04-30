@@ -1,0 +1,69 @@
+=== Agent 健康檢查 - Tue Apr 28 12:00:49 CST 2026 ===
+
+📄 檢查 Agent 定義文件...
+  ❌ 00_Agent_Index.md - agent.md 缺失
+  ⚠️ 00_Agent_Index.md - skill.md 缺失
+  ✅ 01_orchestrator - agent.md 存在
+  ✅ 01_orchestrator - skill.md 存在
+  ✅ 02_Obsidian_Builder - agent.md 存在
+  ✅ 02_Obsidian_Builder - skill.md 存在
+  ✅ 03_Art_Expert - agent.md 存在
+  ✅ 03_Art_Expert - skill.md 存在
+  ✅ 04_Video_Director - agent.md 存在
+  ✅ 04_Video_Director - skill.md 存在
+  ✅ 05_Content_Writer - agent.md 存在
+  ✅ 05_Content_Writer - skill.md 存在
+  ✅ 06_Financial_Analyst - agent.md 存在
+  ✅ 06_Financial_Analyst - skill.md 存在
+  ✅ 07_Market_Researcher - agent.md 存在
+  ✅ 07_Market_Researcher - skill.md 存在
+  ✅ 08_Software_Engineer - agent.md 存在
+  ✅ 08_Software_Engineer - skill.md 存在
+  ✅ 09_Data_Engineer - agent.md 存在
+  ✅ 09_Data_Engineer - skill.md 存在
+  ✅ 10_social_publisher - agent.md 存在
+  ✅ 10_social_publisher - skill.md 存在
+  ✅ 11_Report_Designer - agent.md 存在
+  ✅ 11_Report_Designer - skill.md 存在
+  ✅ 12_Quality_Assurance - agent.md 存在
+  ✅ 12_Quality_Assurance - skill.md 存在
+  ❌ 13_shared_data - agent.md 缺失
+  ⚠️ 13_shared_data - skill.md 缺失
+  ❌ 14_Daily_work_log - agent.md 缺失
+  ⚠️ 14_Daily_work_log - skill.md 缺失
+  ❌ 15_Weekly_work_log - agent.md 缺失
+  ⚠️ 15_Weekly_work_log - skill.md 缺失
+
+🔌 檢查 API 設定...
+  ✅ .env 文件存在
+  ⚠️ BRAVE_API 未設定
+  ⚠️ DEEPSEEK_API 未設定
+  ⚠️ HF_API 未設定
+
+💾 檢查 Vault 寫入權限...
+  ✅ Vault 寫入權限正常
+
+📝 檢查日誌目錄...
+  ✅ performance_logs 目錄存在
+  ✅ health_logs 目錄存在
+  ✅ qa_log 目錄存在
+  ✅ performance_summary 目錄存在
+
+📋 檢查必要文件...
+  ✅ routing.md 存在
+  ✅ skill-index.md 存在
+  ✅ high_priority_skills.md 存在
+  ✅ error-handling-template.md 存在
+  ✅ performance-tracking.md 存在
+  ✅ ARCHITECTURE.md 存在
+
+🎯 檢查 Orchestrator...
+  ✅ Orchestrator 定義存在
+  📊 管理的 Agent 數量：12
+
+=== 檢查總結 ===
+✅ 成功：37
+⚠️ 警告：7
+❌ 失敗：4
+
+🚨 發現問題，需要立即處理！

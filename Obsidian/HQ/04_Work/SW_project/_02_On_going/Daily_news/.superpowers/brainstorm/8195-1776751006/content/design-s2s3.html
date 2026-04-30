@@ -1,0 +1,107 @@
+<h2>Design — Sections 2 & 3: What Changes, What's New</h2>
+<p class="subtitle">Feed configuration updates + new files to build</p>
+
+<style>
+  .file-tree { font-family: 'SF Mono', Consolas, monospace; font-size: 0.82rem; line-height: 1.8; background: #f8f8f8; border: 1px solid #e0e0e0; border-radius: 6px; padding: 14px 18px; }
+  .file-new { color: #2e7d20; font-weight: 600; }
+  .file-changed { color: #b35a00; font-weight: 600; }
+  .file-same { color: #888; }
+  .badge-sm { font-size: 0.68rem; padding: 1px 6px; border-radius: 8px; font-weight: 600; margin-left: 6px; vertical-align: middle; }
+  .n { background: #e8f4e8; color: #2e7d20; border: 1px solid #b8d8b8; }
+  .c { background: #fff3e0; color: #b35a00; border: 1px solid #f0c080; }
+  .tab-preview { border: 1px solid #ddd; border-radius: 6px; overflow: hidden; }
+  .tab-bar { display: flex; background: #f0ebe0; border-bottom: 2px solid #c8b89a; }
+  .tab-item { padding: 8px 14px; font-size: 0.78rem; font-family: Georgia, serif; color: #666; cursor: pointer; border-right: 1px solid #ddd; }
+  .tab-item.active { background: #fff; color: #1a1a1a; font-weight: 600; border-bottom: 2px solid #fff; margin-bottom: -2px; }
+  .tab-item.new-tab { color: #8b4513; font-weight: 600; }
+  .tab-body { padding: 12px 16px; background: #fff; font-family: Georgia, serif; font-size: 0.82rem; }
+</style>
+
+<div class="section">
+  <h3>Section 2 — Updated Tab Structure (Daily Email)</h3>
+  <div class="tab-preview">
+    <div class="tab-bar">
+      <div class="tab-item active">中文新聞</div>
+      <div class="tab-item">中文產業新聞</div>
+      <div class="tab-item">English News</div>
+      <div class="tab-item">日本語ニュース</div>
+      <div class="tab-item new-tab">📝 Tech Blogs ✦ new</div>
+    </div>
+    <div class="tab-body">
+      <div style="color:#888;font-size:0.78rem;margin-bottom:8px">English tab upgraded · Startups / Tech / General sub-sections from rss_feeds.md</div>
+      <div style="border-bottom:1px solid #eee;padding-bottom:8px;margin-bottom:8px">
+        <strong>DeepSeek Raises $500M in New Funding Round</strong><br>
+        <span style="font-size:0.75rem;color:#888">TechCrunch · Startup · 07:30</span>
+      </div>
+      <div style="border-bottom:1px solid #eee;padding-bottom:8px;margin-bottom:8px">
+        <strong>What I learned shipping 12 side projects in 2025</strong><br>
+        <span style="font-size:0.75rem;color:#888">simonwillison.net · Tech Blog · 06:15</span>
+      </div>
+      <div style="color:#bbb;font-size:0.75rem;font-style:italic">+ 3 more items…</div>
+    </div>
+  </div>
+  <div style="margin-top:10px;font-size:0.82rem;color:#555;line-height:1.6">
+    <strong>feeds.yaml changes:</strong> English tab gets 3 sub-groups (startups/tech/general). Japanese gets 9 Yahoo JP categories + 9 Asahi. Chinese stays CNA (already good). Tech Blogs tab: 18 curated feeds → top 5 most-recent items shown, using RSS excerpt (no AI cost).
+  </div>
+</div>
+
+<div class="section">
+  <h3>Section 3 — New Files & Code Changes</h3>
+  <div class="split">
+    <div>
+      <div class="file-tree">
+src/<br>
+&nbsp;&nbsp;<span class="file-same">├── feed_fetcher.py</span> <span class="badge-sm c">minor update</span><br>
+&nbsp;&nbsp;<span class="file-same">├── summarizer.py</span> <span class="badge-sm c">skip tech blogs</span><br>
+&nbsp;&nbsp;<span class="file-same">├── renderer_email.py</span> <span class="badge-sm c">5th tab added</span><br>
+&nbsp;&nbsp;<span class="file-same">├── renderer_web.py</span> <span class="badge-sm c">5th tab added</span><br>
+&nbsp;&nbsp;<span class="file-new">├── twitter_searcher.py</span> <span class="badge-sm n">new</span><br>
+&nbsp;&nbsp;<span class="file-new">└── weekly_renderer.py</span> <span class="badge-sm n">new</span><br>
+<br>
+config/<br>
+&nbsp;&nbsp;<span class="file-changed">├── feeds.yaml</span> <span class="badge-sm c">updated</span><br>
+&nbsp;&nbsp;<span class="file-new">└── tech_blogs.yaml</span> <span class="badge-sm n">new — 18 blogs</span><br>
+<br>
+templates/<br>
+&nbsp;&nbsp;<span class="file-same">├── email.html</span> <span class="badge-sm c">5-tab polish</span><br>
+&nbsp;&nbsp;<span class="file-same">├── web.html</span> <span class="badge-sm c">5-tab polish</span><br>
+&nbsp;&nbsp;<span class="file-new">└── weekly_email.html</span> <span class="badge-sm n">new</span><br>
+<br>
+.github/workflows/<br>
+&nbsp;&nbsp;<span class="file-same">├── daily_digest.yml</span> <span class="badge-sm c">minor update</span><br>
+&nbsp;&nbsp;<span class="file-new">└── weekly_digest.yml</span> <span class="badge-sm n">new — Mon 08:00</span>
+      </div>
+    </div>
+    <div>
+      <div style="font-size:0.82rem;line-height:1.8">
+        <div style="margin-bottom:14px">
+          <strong>twitter_searcher.py</strong><br>
+          <span style="color:#555">Reads <code>twitter_resource.md</code> account list → batches 10–15 accounts → calls Tavily Search API → filters by keywords → returns top scored results</span>
+        </div>
+        <div style="margin-bottom:14px">
+          <strong>weekly_renderer.py</strong><br>
+          <span style="color:#555">Takes filtered tweet data → calls DeepSeek to generate "core method / why useful" summary → renders FT-styled weekly email HTML with scan stats footer</span>
+        </div>
+        <div style="margin-bottom:14px">
+          <strong>tech_blogs.yaml</strong><br>
+          <span style="color:#555">Stores the 18 curated blog URLs separately from news feeds. Easier to maintain & extend.</span>
+        </div>
+        <div>
+          <strong>Design polish (FT refined)</strong><br>
+          <span style="color:#555">Better line-height, section spacing, tab border treatment, mobile breakpoint in web view. Email stays conservative CSS for compatibility.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="options" style="margin-top:20px">
+  <div class="option" data-choice="approve" onclick="toggleSelect(this)">
+    <div class="letter">✓</div>
+    <div class="content"><h3>Looks good — write the design doc</h3></div>
+  </div>
+  <div class="option" data-choice="revise" onclick="toggleSelect(this)">
+    <div class="letter">✎</div>
+    <div class="content"><h3>I want to adjust something</h3></div>
+  </div>
+</div>

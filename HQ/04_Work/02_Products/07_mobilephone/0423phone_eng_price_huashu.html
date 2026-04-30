@@ -1,0 +1,1296 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mobile Phone Price List (English) — Huashu</title>
+  <style>
+    :root{
+      --paper:#FAFAF8;         /* from huashu-design showcase: infographic-build */
+      --ink:#1A1A1A;
+      --ink2:#2A2A2A;
+      --muted:#6F6A63;
+      --muted2:#B0ACA4;        /* huashu-design label gray */
+      --line:#E0DCDA;
+      --line2:#ECE9E6;
+      --accent:#D4532B;        /* from huashu-design/assets/banner.svg */
+      --accent2:#D4A574;       /* from huashu-design showcase: infographic-build */
+      --danger:#B33A2B;
+      --warn:#9B6A1E;
+      --radius:10px;
+      --shadow:0 1px 2px rgba(0,0,0,.04), 0 12px 34px rgba(0,0,0,.06);
+      --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      --sans: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+    }
+
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      background:var(--paper);
+      color:var(--ink2);
+      font-family:var(--sans);
+      line-height:1.55;
+      -webkit-font-smoothing:antialiased;
+      text-rendering:optimizeLegibility;
+    }
+
+    .frame{
+      max-width: 980px;
+      margin: 24px auto 56px;
+      padding: 0 16px;
+    }
+
+    .sheet{
+      background:rgba(255,255,255,.72);
+      border:1px solid var(--line);
+      border-radius: 14px;
+      box-shadow: var(--shadow);
+      overflow:hidden;
+      position:relative;
+    }
+
+    /* editorial left rule (huashu banner cue) */
+    .sheet::before{
+      content:"";
+      position:absolute;
+      top:0;
+      left:0;
+      width:3px;
+      height:100%;
+      background: linear-gradient(180deg, var(--accent), color-mix(in srgb, var(--accent) 55%, #000 45%));
+      opacity:.9;
+    }
+
+    header.doc-header{
+      padding: 18px 22px 14px 22px;
+      border-bottom:1px solid var(--line);
+      background: linear-gradient(180deg, rgba(250,250,248,.85), rgba(250,250,248,.35));
+      display:flex;
+      align-items:flex-end;
+      justify-content:space-between;
+      gap:16px;
+    }
+
+    .kicker{
+      font-size:11px;
+      letter-spacing: .28em;
+      text-transform: uppercase;
+      color: var(--accent);
+      font-weight: 700;
+    }
+
+    .title{
+      margin:10px 0 0;
+      font-size: 28px;
+      letter-spacing: -0.02em;
+      color: var(--ink);
+      font-weight: 650;
+      line-height:1.15;
+    }
+
+    .meta{
+      margin-top: 10px;
+      display:flex;
+      align-items:center;
+      gap:10px;
+      flex-wrap:wrap;
+      color: var(--muted);
+      font-size:12px;
+    }
+
+    .meta .chip{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:6px 10px;
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.6);
+      border-radius: 999px;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .meta .dot{
+      width:6px;height:6px;border-radius:999px;
+      background: var(--accent2);
+      opacity:.9;
+    }
+
+    .mark{
+      width: 158px;
+      height: 58px;
+      border:1px solid var(--line);
+      border-radius: 10px;
+      overflow:hidden;
+      background: #fff;
+      flex: 0 0 auto;
+      position:relative;
+    }
+    .mark img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      transform: translateY(8%);
+      filter:saturate(.95) contrast(1.03);
+    }
+    .mark::after{
+      content:"";
+      position:absolute;
+      inset:0;
+      background: linear-gradient(90deg, rgba(212,83,43,.12), rgba(212,165,116,.08), rgba(255,255,255,0));
+      mix-blend-mode:multiply;
+      pointer-events:none;
+    }
+
+    main.doc{
+      padding: 18px 22px 26px 22px;
+    }
+
+    /* pandoc content styling */
+    main.doc h2{
+      margin: 10px 0 10px;
+      font-size: 18px;
+      letter-spacing: .02em;
+      font-weight: 650;
+      color: var(--ink);
+    }
+
+    main.doc h3{
+      margin: 26px 0 10px;
+      padding-top: 16px;
+      border-top: 1px solid var(--line);
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: .18em;
+      color: var(--muted);
+      font-weight: 700;
+    }
+
+    main.doc h4{
+      margin: 14px 0 8px;
+      font-size: 13px;
+      letter-spacing: .04em;
+      color: var(--ink);
+      font-weight: 650;
+    }
+
+    main.doc hr{
+      border:0;
+      height:1px;
+      background: linear-gradient(90deg, var(--accent2), rgba(0,0,0,0));
+      opacity:.45;
+      margin: 18px 0 6px;
+    }
+
+    main.doc p{
+      margin: 12px 0 0;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    table{
+      width: 100%;
+      border-collapse: collapse;
+      border-spacing: 0;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      overflow: hidden;
+      background: rgba(255,255,255,.75);
+    }
+
+    thead th{
+      text-align:left;
+      font-size: 11px;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: color-mix(in srgb, var(--muted) 88%, #000 12%);
+      padding: 10px 10px;
+      border-bottom: 1px solid var(--line);
+      background: rgba(250,250,248,.85);
+    }
+
+    tbody td{
+      padding: 9px 10px;
+      border-bottom: 1px solid var(--line2);
+      vertical-align: top;
+      font-size: 12px;
+      color: var(--ink2);
+    }
+
+    tbody tr:nth-child(2n) td{
+      background: rgba(250,250,248,.45);
+    }
+
+    td:last-child, th:last-child{
+      text-align:right;
+      font-variant-numeric: tabular-nums;
+      white-space: nowrap;
+    }
+
+    td:nth-child(2){
+      color: color-mix(in srgb, var(--muted) 86%, #000 14%);
+      white-space: nowrap;
+    }
+
+    .badge{
+      display:inline-flex;
+      align-items:center;
+      padding: 2px 8px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,.75);
+      font-size: 11px;
+      line-height: 1.4;
+      letter-spacing: .02em;
+    }
+    .badge.oos{
+      border-color: color-mix(in srgb, var(--danger) 35%, var(--line) 65%);
+      background: color-mix(in srgb, var(--danger) 9%, #fff 91%);
+      color: color-mix(in srgb, var(--danger) 80%, #000 20%);
+    }
+    .badge.call{
+      border-color: color-mix(in srgb, var(--warn) 28%, var(--line) 72%);
+      background: color-mix(in srgb, var(--warn) 10%, #fff 90%);
+      color: color-mix(in srgb, var(--warn) 85%, #000 15%);
+    }
+
+    /* Print rules: keep tables readable and paginate well */
+    @media print {
+      :root{ --paper: #ffffff; }
+      body{ background:#fff; }
+      .frame{ max-width: none; margin:0; padding:0; }
+      .sheet{ border: 0; border-radius: 0; box-shadow: none; background:#fff; }
+      .sheet::before{ left: 0; }
+
+      /* repeat header/footer on each page */
+      header.doc-header{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding: 10mm 14mm 4mm 14mm;
+        border-bottom: 1px solid var(--line);
+        background: #fff;
+      }
+
+      footer.doc-footer{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 3.5mm 14mm 8mm 14mm;
+        border-top: 1px solid var(--line);
+        background:#fff;
+        color: var(--muted);
+        font-size: 10px;
+        letter-spacing: .10em;
+        text-transform: uppercase;
+      }
+
+      main.doc{
+        padding: 26mm 14mm 20mm 14mm; /* clears fixed header/footer */
+      }
+
+      /* A4 portrait */
+      @page{ size: A4; margin: 0; }
+
+      /* keep table headers repeating, avoid row splits */
+      thead{ display: table-header-group; }
+      tfoot{ display: table-footer-group; }
+      tr, td, th{ break-inside: avoid; page-break-inside: avoid; }
+      table{ break-inside: auto; }
+
+      /* page breaks between brands */
+      h3.page-break{ break-before: page; page-break-before: always; }
+
+      /* print exact colors */
+      *{ -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+
+      /* slightly tighter text for print density */
+      tbody td{ font-size: 10.5px; padding: 7px 8px; }
+      thead th{ font-size: 10px; padding: 8px 8px; }
+      main.doc h2{ font-size: 16px; }
+      main.doc h3{ font-size: 12px; margin-top: 20px; }
+      main.doc h4{ font-size: 11.5px; }
+    }
+
+    /* small-screen fallback */
+    @media (max-width: 560px){
+      .mark{ display:none; }
+      .title{ font-size: 22px; }
+      tbody td{ font-size: 11.5px; }
+    }
+  </style>
+</head>
+<body>
+  <!--
+    Huashu-inspired cues (local references):
+    - Accent + editorial rules derived from: HQ/10_resources/huashu-design/assets/banner.svg
+    - Paper + muted palette / clean table vibe derived from: HQ/10_resources/huashu-design/assets/showcases/infographic/infographic-build.html
+    - Local motif image embedded via file URI (no external web resources): cover-build.png
+
+    Source content (unchanged): 0423phone_eng_price.md
+    HTML table structure generated via local pandoc.
+  -->
+
+  <div class="frame">
+    <div class="sheet">
+      <header class="doc-header">
+        <div>
+          <div class="kicker">PRICE LIST · MOBILE</div>
+          <h1 class="title">Mobile Phone Price List (English)</h1>
+          <div class="meta">
+            <span class="chip"><span class="dot"></span><span id="generated">Generated —</span></span>
+            <span class="chip" style="font-family:var(--mono)">Currency: NTD</span>
+          </div>
+        </div>
+        <div class="mark" aria-hidden="true">
+          <img src="file:///Users/benny/Downloads/n8n_project/obsidian/Obsidian/HQ/10_resources/huashu-design/assets/showcases/cover/cover-build.png" alt="" />
+        </div>
+      </header>
+
+      <main class="doc" id="content">
+        <div class="pandoc">
+          <h2 id="mobile-phone-price-list-english">Mobile Phone Price List (English)</h2>
+<h3 id="apple">Apple</h3>
+<h4 id="iphone">iPhone</h4>
+<table>
+<thead>
+<tr>
+<th>Model</th>
+<th>Size</th>
+<th>Price (NTD)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>iPhone 17</td>
+<td>256G</td>
+<td>30,030</td>
+</tr>
+<tr>
+<td>iPhone 17</td>
+<td>512G</td>
+<td>37,950</td>
+</tr>
+<tr>
+<td>iPhone 17 Pro</td>
+<td>256G</td>
+<td>41,140</td>
+</tr>
+<tr>
+<td>iPhone 17 Pro</td>
+<td>512G</td>
+<td>48,290</td>
+</tr>
+<tr>
+<td>iPhone 17 Pro</td>
+<td>1TB</td>
+<td>55,990</td>
+</tr>
+<tr>
+<td>iPhone 17 Pro Max</td>
+<td>256G</td>
+<td>46,310</td>
+</tr>
+<tr>
+<td>iPhone 17 Pro Max</td>
+<td>512G</td>
+<td>Out of Stock</td>
+</tr>
+<tr>
+<td>iPhone 17 Pro Max</td>
+<td>1TB</td>
+<td>61,050</td>
+</tr>
+<tr>
+<td>iPhone 17 Pro Max</td>
+<td>2TB</td>
+<td>Out of Stock</td>
+</tr>
+<tr>
+<td>iPhone 17e</td>
+<td>256G</td>
+<td>22,425</td>
+</tr>
+<tr>
+<td>iPhone 17e</td>
+<td>512G</td>
+<td>29,565</td>
+</tr>
+</tbody>
+</table>
+<h4 id="ipad-tablet">iPad (Tablet)</h4>
+<table>
+<thead>
+<tr>
+<th>Model</th>
+<th>Size</th>
+<th>Price (NTD)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>iPad 11.0 2025 WIFI</td>
+<td>128G</td>
+<td>Out of Stock</td>
+</tr>
+<tr>
+<td>iPad Air 11 2026 WIFI</td>
+<td>128G</td>
+<td>20,358</td>
+</tr>
+<tr>
+<td>iPad Air 11 2026 5G</td>
+<td>128G</td>
+<td>25,473</td>
+</tr>
+<tr>
+<td>iPad Air 11 2026 WIFI</td>
+<td>256G</td>
+<td>23,938</td>
+</tr>
+<tr>
+<td>iPad Air 11 2026 5G</td>
+<td>256G</td>
+<td>29,053</td>
+</tr>
+<tr>
+<td>iPad Air 13 2026 WIFI</td>
+<td>128G</td>
+<td>27,519</td>
+</tr>
+<tr>
+<td>iPad Air 13 2026 5G</td>
+<td>128G</td>
+<td>32,634</td>
+</tr>
+<tr>
+<td>iPad Air 13 2026 WIFI</td>
+<td>256G</td>
+<td>31,099</td>
+</tr>
+<tr>
+<td>iPad Air 13 2026 5G</td>
+<td>256G</td>
+<td>36,214</td>
+</tr>
+<tr>
+<td>iPad Air 11 2025 5G</td>
+<td>128G</td>
+<td>23,383</td>
+</tr>
+<tr>
+<td>iPad Air 11 2025 WIFI</td>
+<td>256G</td>
+<td>Out of Stock</td>
+</tr>
+<tr>
+<td>iPad Air 13 2025 WIFI</td>
+<td>256G</td>
+<td>29,009</td>
+</tr>
+<tr>
+<td>iPad Air 13 2025 5G</td>
+<td>256G</td>
+<td>33,904</td>
+</tr>
+<tr>
+<td>iPad Pro 11 2025 WIFI</td>
+<td>256G</td>
+<td>33,476</td>
+</tr>
+<tr>
+<td>iPad Pro 11 2025 WIFI</td>
+<td>512G</td>
+<td>40,599</td>
+</tr>
+<tr>
+<td>iPad Pro 11 2025 5G</td>
+<td>512G</td>
+<td>47,721</td>
+</tr>
+<tr>
+<td>iPad Pro 13 2025 WIFI</td>
+<td>256G</td>
+<td>44,669</td>
+</tr>
+<tr>
+<td>iPad Pro 13 2025 5G</td>
+<td>256G</td>
+<td>Out of Stock</td>
+</tr>
+<tr>
+<td>iPad Pro 13 2025 WIFI</td>
+<td>512G</td>
+<td>Out of Stock</td>
+</tr>
+</tbody>
+</table>
+<h4 id="apple-watch--airpods">Apple Watch / AirPods</h4>
+<table>
+<thead>
+<tr>
+<th>Model</th>
+<th>Spec</th>
+<th>Price (NTD)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Watch S11 42mm</td>
+<td>GPS Aluminum</td>
+<td>12,980</td>
+</tr>
+<tr>
+<td>Watch S11 46mm</td>
+<td>GPS Aluminum</td>
+<td>13,970</td>
+</tr>
+<tr>
+<td>Watch SE3 40mm</td>
+<td>GPS Aluminum</td>
+<td>7,920</td>
+</tr>
+<tr>
+<td>Watch SE3 44mm</td>
+<td>GPS Aluminum</td>
+<td>8,910</td>
+</tr>
+<tr>
+<td>AirPods Pro 3</td>
+<td>Bluetooth</td>
+<td>7,040</td>
+</tr>
+<tr>
+<td>AirPods 4</td>
+<td>Bluetooth</td>
+<td>4,400</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="samsung">Samsung</h3>
+<h4 id="mobile-phones">Mobile Phones</h4>
+<table>
+<thead>
+<tr>
+<th>Model</th>
+<th>Size</th>
+<th>Price (NTD)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A076B (A07) 4/128G</td>
+<td>5G</td>
+<td>4,510</td>
+</tr>
+<tr>
+<td>A1760 (A17) 6/128G</td>
+<td>5G</td>
+<td>5,390</td>
+</tr>
+<tr>
+<td>A1760 (A17) 8/128G</td>
+<td>5G</td>
+<td>6,380</td>
+</tr>
+<tr>
+<td>A2660 (A26) 8/128G</td>
+<td>5G</td>
+<td>Out of Stock</td>
+</tr>
+<tr>
+<td>A3660 (A36) 8/128G</td>
+<td>5G</td>
+<td>8,800</td>
+</tr>
+<tr>
+<td>A3660 (A36) 8/256G</td>
+<td>5G</td>
+<td>9,350</td>
+</tr>
+<tr>
+<td>A376B (A37) 8/128G</td>
+<td>5G</td>
+<td>13,530</td>
+</tr>
+<tr>
+<td>A376B (A37) 8/256G</td>
+<td>5G</td>
+<td>14,300</td>
+</tr>
+<tr>
+<td>A5660 (A56) 8/256G</td>
+<td>5G</td>
+<td>10,670</td>
+</tr>
+<tr>
+<td>A5660 (A56) 12/256G</td>
+<td>5G</td>
+<td>11,660</td>
+</tr>
+<tr>
+<td>A576B (A57) 8/256G</td>
+<td>5G</td>
+<td>16,060</td>
+</tr>
+<tr>
+<td>A576B (A57) 12/256G</td>
+<td>5G</td>
+<td>17,600</td>
+</tr>
+<tr>
+<td>A576B (A57) 12/512G</td>
+<td>5G</td>
+<td>Out of Stock</td>
+</tr>
+<tr>
+<td>F7660 (Flip7) 12/256G</td>
+<td>5G</td>
+<td>25,080</td>
+</tr>
+<tr>
+<td>F7660 (Flip7) 12/512G</td>
+<td>5G</td>
+<td>27,500</td>
+</tr>
+<tr>
+<td>F9660 (Fold7) 12/256G</td>
+<td>5G</td>
+<td>49,720</td>
+</tr>
+<tr>
+<td>F9660 (Fold7) 12/512G</td>
+<td>5G</td>
+<td>51,700</td>
+</tr>
+<tr>
+<td>S9310 S25 12/256G</td>
+<td>5G</td>
+<td>20,570</td>
+</tr>
+<tr>
+<td>S9360 S25+ 12/256G</td>
+<td>5G</td>
+<td>25,630</td>
+</tr>
+<tr>
+<td>S9370 S25 Edge 12/256G</td>
+<td>5G</td>
+<td>Out of Stock</td>
+</tr>
+<tr>
+<td>S9380 S25U 12/256G</td>
+<td>5G</td>
+<td>31,460</td>
+</tr>
+<tr>
+<td>S9380 S25U 12/512G</td>
+<td>5G</td>
+<td>36,520</td>
+</tr>
+<tr>
+<td>S9420 S26 12/256G</td>
+<td>5G</td>
+<td>28,600</td>
+</tr>
+<tr>
+<td>S9420 S26 12/512G</td>
+<td>5G</td>
+<td>34,100</td>
+</tr>
+<tr>
+<td>S9470 S26+ 12/256G</td>
+<td>5G</td>
+<td>35,200</td>
+</tr>
+<tr>
+<td>S9470 S26+ 12/512G</td>
+<td>5G</td>
+<td>40,920</td>
+</tr>
+<tr>
+<td>S9480 S26U 12/256G</td>
+<td>5G</td>
+<td>41,800</td>
+</tr>
+<tr>
+<td>S9480 S26U 12/512G</td>
+<td>5G</td>
+<td>47,080</td>
+</tr>
+</tbody>
+</table>
+<h4 id="tablet">Tablet</h4>
+<table>
+<thead>
+<tr>
+<th>Model</th>
+<th>Size</th>
+<th>Price (NTD)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>X133 A11 8.7&quot; WIFI 4/64G</td>
+<td>Tablet</td>
+<td>4,675</td>
+</tr>
+<tr>
+<td>X135 A11 8.7&quot; LTE 4/64G</td>
+<td>Tablet</td>
+<td>6,270</td>
+</tr>
+<tr>
+<td>X210 A9+ 11&quot; WIFI 4/64G</td>
+<td>Tablet</td>
+<td>5,390</td>
+</tr>
+<tr>
+<td>X230 A11+ 11&quot; WIFI 6/128G</td>
+<td>Tablet</td>
+<td>6,160</td>
+</tr>
+<tr>
+<td>X236 A11+ 11&quot; LTE 6/128G</td>
+<td>Tablet</td>
+<td>8,690</td>
+</tr>
+<tr>
+<td>X400 S10L 10.9&quot; 5G 6/128G</td>
+<td>Tablet</td>
+<td>Out of Stock</td>
+</tr>
+<tr>
+<td>X400 S10L 10.9&quot; WIFI 6/128G</td>
+<td>Tablet</td>
+<td>10,780</td>
+</tr>
+<tr>
+<td>X510 S9FE 10.9&quot; WIFI 6/128G</td>
+<td>Tablet</td>
+<td>11,660</td>
+</tr>
+<tr>
+<td>X520 S10FE 10.9&quot; WIFI 8/128G</td>
+<td>Tablet</td>
+<td>13,200</td>
+</tr>
+<tr>
+<td>X526 S10FE 10.9&quot; 5G 8/128G</td>
+<td>Tablet</td>
+<td>17,050</td>
+</tr>
+<tr>
+<td>X620 S10FE+ 13.1&quot; WIFI 8/128G</td>
+<td>Tablet</td>
+<td>21,450</td>
+</tr>
+<tr>
+<td>X730 S11 11&quot; WIFI 12/128G</td>
+<td>Tablet</td>
+<td>24,200</td>
+</tr>
+<tr>
+<td>X736 S11 11&quot; 5G 12/128G</td>
+<td>Tablet</td>
+<td>29,040</td>
+</tr>
+<tr>
+<td>X736 S11 11&quot; WIFI 12/256G</td>
+<td>Tablet</td>
+<td>26,950</td>
+</tr>
+<tr>
+<td>X736 S11 11&quot; 5G 12/256G</td>
+<td>Tablet</td>
+<td>31,790</td>
+</tr>
+<tr>
+<td>X820 S10+ 12.4&quot; WIFI 12/256G</td>
+<td>Tablet</td>
+<td>32,120</td>
+</tr>
+<tr>
+<td>X826B S10+ 12.4&quot; 5G 12/256G</td>
+<td>Tablet</td>
+<td>37,180</td>
+</tr>
+<tr>
+<td>X820 S10+ 12.4&quot; WIFI 12/512G</td>
+<td>Tablet</td>
+<td>36,300</td>
+</tr>
+<tr>
+<td>X826B S10+ 12.4&quot; 5G 12/512G</td>
+<td>Tablet</td>
+<td>41,250</td>
+</tr>
+<tr>
+<td>X930 S11U 14.6&quot; WIFI 12/256G</td>
+<td>Tablet</td>
+<td>39,050</td>
+</tr>
+<tr>
+<td>X936 S11U 14.6&quot; 5G 12/256G</td>
+<td>Tablet</td>
+<td>43,450</td>
+</tr>
+<tr>
+<td>X930 S11U 14.6&quot; WIFI 12/512G</td>
+<td>Tablet</td>
+<td>45,650</td>
+</tr>
+<tr>
+<td>X936 S11U 14.6&quot; 5G 12/512G</td>
+<td>Tablet</td>
+<td>49,500</td>
+</tr>
+<tr>
+<td>X936 S11U 14.6&quot; Keyboard WIFI 12/512G</td>
+<td>Tablet</td>
+<td>48,620</td>
+</tr>
+<tr>
+<td>X936 S11U 14.6&quot; Keyboard 5G 12/512G</td>
+<td>Tablet</td>
+<td>53,020</td>
+</tr>
+<tr>
+<td>X936 S11U 14.6&quot; Keyboard WIFI 12/1TB</td>
+<td>Tablet</td>
+<td>58,465</td>
+</tr>
+<tr>
+<td>X936 S11U 14.6&quot; Keyboard 5G 12/1TB</td>
+<td>Tablet</td>
+<td>62,865</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="sony">SONY</h3>
+<table>
+<thead>
+<tr>
+<th>Model</th>
+<th>Size</th>
+<th>Price (NTD)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Xperia 1 VII (FS72) 12/256G</td>
+<td>5G</td>
+<td>37,840</td>
+</tr>
+<tr>
+<td>Xperia 10 VII FE (FE72) 8/128G</td>
+<td>5G</td>
+<td>13,090</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="vivo">VIVO</h3>
+<table>
+<thead>
+<tr>
+<th>Model</th>
+<th>Size</th>
+<th>Price (NTD)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Y05 4/128G</td>
+<td>LTE</td>
+<td>Call for Price</td>
+</tr>
+<tr>
+<td>Y21 6/128G</td>
+<td>5G</td>
+<td>Call for Price</td>
+</tr>
+<tr>
+<td>Y29s 6/128G</td>
+<td>5G</td>
+<td>4,180</td>
+</tr>
+<tr>
+<td>V50 12/256G</td>
+<td>5G</td>
+<td>9,460</td>
+</tr>
+<tr>
+<td>V60 12/256G</td>
+<td>5G</td>
+<td>11,660</td>
+</tr>
+<tr>
+<td>V60 12/512G</td>
+<td>5G</td>
+<td>Out of Stock</td>
+</tr>
+<tr>
+<td>V60 Lite 12/256G</td>
+<td>5G</td>
+<td>9,460</td>
+</tr>
+<tr>
+<td>V70 12/256G</td>
+<td>5G</td>
+<td>18,040</td>
+</tr>
+<tr>
+<td>V70 12/512G</td>
+<td>5G</td>
+<td>20,240</td>
+</tr>
+<tr>
+<td>V70fe 8/256G</td>
+<td>5G</td>
+<td>14,410</td>
+</tr>
+<tr>
+<td>V70fe 12/256G</td>
+<td>5G</td>
+<td>16,390</td>
+</tr>
+<tr>
+<td>X300 12/256G</td>
+<td>5G</td>
+<td>23,100</td>
+</tr>
+<tr>
+<td>X300 Pro 16/512G</td>
+<td>5G</td>
+<td>33,330</td>
+</tr>
+<tr>
+<td>X Fold 5 16/512G</td>
+<td>5G</td>
+<td>43,450</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="sharp">SHARP</h3>
+<table>
+<thead>
+<tr>
+<th>Model</th>
+<th>Size</th>
+<th>Price (NTD)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AQUOS WISH4 6/128G</td>
+<td>5G</td>
+<td>Call for Price</td>
+</tr>
+<tr>
+<td>AQUOS WISH5 6/128G</td>
+<td>5G</td>
+<td>Call for Price</td>
+</tr>
+<tr>
+<td>AQUOS WISH5 8/256G</td>
+<td>5G</td>
+<td>Call for Price</td>
+</tr>
+<tr>
+<td>AQUOS Sense10 8/256G</td>
+<td>5G</td>
+<td>Out of Stock</td>
+</tr>
+<tr>
+<td>AQUOS R10 12/256G</td>
+<td>5G</td>
+<td>Call for Price</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="motorola">Motorola</h3>
+<table>
+<thead>
+<tr>
+<th>Model</th>
+<th>Size</th>
+<th>Price (NTD)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Edge 60 Fusion 12/256G</td>
+<td>5G</td>
+<td>8,800</td>
+</tr>
+<tr>
+<td>Edge 70 12/256G</td>
+<td>5G</td>
+<td>14,190</td>
+</tr>
+<tr>
+<td>G34 4/64G</td>
+<td>LTE</td>
+<td>2,750</td>
+</tr>
+<tr>
+<td>Razr 60 Ultra 16/512G</td>
+<td>5G</td>
+<td>26,950</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="iqoo">iQOO</h3>
+<table>
+<thead>
+<tr>
+<th>Model</th>
+<th>Size</th>
+<th>Price (NTD)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>iQOO 15 (I2501) 16/512G</td>
+<td>5G</td>
+<td>29,150</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="google-pixel">Google Pixel</h3>
+<h4 id="mobile-phones-1">Mobile Phones</h4>
+<table>
+<thead>
+<tr>
+<th>Model</th>
+<th>Size</th>
+<th>Price (NTD)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pixel 9a 8/128G</td>
+<td>5G</td>
+<td>12,100</td>
+</tr>
+<tr>
+<td>Pixel 9a 8/256G</td>
+<td>5G</td>
+<td>15,400</td>
+</tr>
+<tr>
+<td>Pixel 10a 8/128G</td>
+<td>5G</td>
+<td>13,970</td>
+</tr>
+<tr>
+<td>Pixel 10a 8/256G</td>
+<td>5G</td>
+<td>17,820</td>
+</tr>
+<tr>
+<td>Pixel 10 12/128G</td>
+<td>5G</td>
+<td>19,580</td>
+</tr>
+<tr>
+<td>Pixel 10 12/256G</td>
+<td>5G</td>
+<td>Out of Stock</td>
+</tr>
+<tr>
+<td>Pixel 10 Pro 16/128G</td>
+<td>5G</td>
+<td>27,720</td>
+</tr>
+<tr>
+<td>Pixel 10 Pro 16/256G</td>
+<td>5G</td>
+<td>32,450</td>
+</tr>
+<tr>
+<td>Pixel 10 Pro 16/512G</td>
+<td>5G</td>
+<td>37,510</td>
+</tr>
+<tr>
+<td>Pixel 10 Pro XL 16/256G</td>
+<td>5G</td>
+<td>33,550</td>
+</tr>
+<tr>
+<td>Pixel 10 Pro XL 16/512G</td>
+<td>5G</td>
+<td>39,600</td>
+</tr>
+<tr>
+<td>Pixel 10 Pro Fold 16/256G</td>
+<td>5G</td>
+<td>52,470</td>
+</tr>
+<tr>
+<td>Pixel 10 Pro Fold 16/512G</td>
+<td>5G</td>
+<td>56,430</td>
+</tr>
+</tbody>
+</table>
+<h4 id="google-watch">Google Watch</h4>
+<table>
+<thead>
+<tr>
+<th>Model</th>
+<th>Size</th>
+<th>Price (NTD)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Watch 3 BT 41mm</td>
+<td>—</td>
+<td>3,850</td>
+</tr>
+<tr>
+<td>Watch 3 BT 45mm</td>
+<td>—</td>
+<td>4,950</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="oppo">OPPO</h3>
+<table>
+<thead>
+<tr>
+<th>Model</th>
+<th>Size</th>
+<th>Price (NTD)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Reno15 Pro Max 12/512G</td>
+<td>5G</td>
+<td>22,330</td>
+</tr>
+<tr>
+<td>Reno15 Pro 12/256G</td>
+<td>5G</td>
+<td>Out of Stock</td>
+</tr>
+<tr>
+<td>Reno15 12/512G</td>
+<td>5G</td>
+<td>16,280</td>
+</tr>
+<tr>
+<td>Reno15 12/256G</td>
+<td>5G</td>
+<td>14,520</td>
+</tr>
+<tr>
+<td>Reno15F 12/256G</td>
+<td>5G</td>
+<td>10,450</td>
+</tr>
+<tr>
+<td>Find X8 12/256G</td>
+<td>5G</td>
+<td>21,340</td>
+</tr>
+<tr>
+<td>Watch S 44.98mm WIFI</td>
+<td>—</td>
+<td>3,850</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="redmi-xiaomi-sub-brand">Redmi (Xiaomi Sub-brand)</h3>
+<table>
+<thead>
+<tr>
+<th>Model</th>
+<th>Size</th>
+<th>Price (NTD)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Redmi Note 15 6/128G</td>
+<td>5G</td>
+<td>7,040</td>
+</tr>
+<tr>
+<td>Redmi 15 4/128G</td>
+<td>5G</td>
+<td>5,060</td>
+</tr>
+<tr>
+<td>Redmi 15 8/256G</td>
+<td>5G</td>
+<td>6,270</td>
+</tr>
+<tr>
+<td>Redmi 15C 4/128G</td>
+<td>LTE</td>
+<td>3,630</td>
+</tr>
+<tr>
+<td>Redmi 15C 8/256G</td>
+<td>LTE</td>
+<td>4,840</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><em>Prices are for reference only. Actual prices may vary. Stock status is subject to change.</em></p>
+        </div>
+      </main>
+
+      <footer class="doc-footer" aria-hidden="true">
+        <span>Mobile phone price sheet</span>
+        <span style="float:right">Generated: <span id="generatedPrint">—</span></span>
+      </footer>
+    </div>
+  </div>
+
+  <script>
+    (function(){
+      var dt = new Date();
+      var s = dt.getFullYear() + "-" + String(dt.getMonth()+1).padStart(2,'0') + "-" + String(dt.getDate()).padStart(2,'0') + " " + String(dt.getHours()).padStart(2,'0') + ":" + String(dt.getMinutes()).padStart(2,'0');
+      var el = document.getElementById('generated');
+      var el2 = document.getElementById('generatedPrint');
+      if (el) el.textContent = 'Generated ' + s;
+      if (el2) el2.textContent = s;
+
+      // page break between brand sections (h3)
+      var brands = Array.from(document.querySelectorAll('main.doc h3'));
+      brands.forEach(function(h, idx){ if (idx > 0) h.classList.add('page-break'); });
+
+      // status badges in price cells
+      var tds = Array.from(document.querySelectorAll('table tbody td:last-child'));
+      tds.forEach(function(td){
+        var txt = (td.textContent || '').trim();
+        if (!txt) return;
+        if (/^out of stock$/i.test(txt)) {
+          td.innerHTML = '<span class="badge oos">Out of Stock</span>';
+          return;
+        }
+        if (/^call for price$/i.test(txt)) {
+          td.innerHTML = '<span class="badge call">Call for Price</span>';
+        }
+      });
+    })();
+  </script>
+</body>
+</html>
