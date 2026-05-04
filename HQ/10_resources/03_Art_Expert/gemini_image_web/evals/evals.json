@@ -1,0 +1,11 @@
+{
+  "skill_name": "gemini_image_web",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Please generate a luxury product image for the ALFA APA-M25-6E antenna using the local Gemini Web server. Export it to /tmp/test_image. Prompt: A high-fashion editorial shot of a matte black antenna on ivory background.",
+      "expected_output": "Agent should check server health, start it if needed, and send a POST request with the correct prompt and output_dir.",
+      "files": []
+    }
+  ]
+}

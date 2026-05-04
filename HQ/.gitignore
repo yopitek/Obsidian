@@ -1,0 +1,4 @@
+env/
+.env
+*.env
+HQ/04_Work/env/

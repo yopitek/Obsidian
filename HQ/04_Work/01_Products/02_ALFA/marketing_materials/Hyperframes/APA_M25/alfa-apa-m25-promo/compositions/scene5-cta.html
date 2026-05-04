@@ -1,0 +1,251 @@
+<template id="scene5-cta-template">
+  <div
+    data-composition-id="scene5-cta"
+    data-width="1920"
+    data-height="1080"
+    data-duration="6"
+  >
+    <div class="canvas">
+      <!-- Radial glow background -->
+      <div class="bg-glow"></div>
+
+      <!-- Particle dots (decorative, fixed positions) -->
+      <svg class="particles" viewBox="0 0 1920 1080" width="1920" height="1080">
+        <circle class="p p1" cx="200"  cy="200"  r="3" fill="#0066FF" opacity="0"/>
+        <circle class="p p2" cx="400"  cy="800"  r="2" fill="#0066FF" opacity="0"/>
+        <circle class="p p3" cx="1600" cy="250"  r="3" fill="#0066FF" opacity="0"/>
+        <circle class="p p4" cx="1750" cy="780"  r="2" fill="#0066FF" opacity="0"/>
+        <circle class="p p5" cx="960"  cy="100"  r="2" fill="#0066FF" opacity="0"/>
+        <circle class="p p6" cx="300"  cy="540"  r="2" fill="#0066FF" opacity="0"/>
+        <circle class="p p7" cx="1620" cy="540"  r="2" fill="#0066FF" opacity="0"/>
+        <circle class="p p8" cx="960"  cy="980"  r="3" fill="#0066FF" opacity="0"/>
+      </svg>
+
+      <!-- Main CTA text -->
+      <div class="cta-wrap">
+        <div class="cta-eyebrow">ALFA NETWORK</div>
+        <div class="cta-headline-wrap">
+          <div class="cta-headline">Lock On.</div>
+          <div class="cta-headline cta-headline-blue">Speed Up.</div>
+        </div>
+        <!-- Underline reveal -->
+        <div class="underline-bar"></div>
+        <div class="cta-sub">Dual-band precision. Point it. Dominate it.</div>
+      </div>
+
+      <!-- Product badge -->
+      <div class="product-badge">
+        <div class="badge-model">APA-M25</div>
+        <div class="badge-spec">8/10 dBi · 2.4/5 GHz · Directional</div>
+      </div>
+
+      <!-- URL pill -->
+      <div class="url-pill-wrap">
+        <div class="url-pill">
+          <span class="url-dot"></span>
+          <span class="url-text">alfa.com.tw</span>
+        </div>
+      </div>
+    </div>
+
+    <style>
+      [data-composition-id="scene5-cta"] .canvas {
+        width: 1920px;
+        height: 1080px;
+        background: #050508;
+        position: relative;
+        overflow: hidden;
+        font-family: "Inter", sans-serif;
+      }
+
+      [data-composition-id="scene5-cta"] .bg-glow {
+        position: absolute;
+        left: -200px;
+        top: 100px;
+        width: 900px;
+        height: 900px;
+        background: radial-gradient(ellipse at center, rgba(0,102,255,0.18) 0%, transparent 65%);
+        border-radius: 50%;
+        opacity: 0;
+        pointer-events: none;
+        filter: blur(40px);
+      }
+
+      [data-composition-id="scene5-cta"] .particles {
+        position: absolute;
+        top: 0; left: 0;
+        pointer-events: none;
+      }
+
+      [data-composition-id="scene5-cta"] .cta-wrap {
+        position: absolute;
+        top: 200px;
+        left: 140px;
+        max-width: 1100px;
+      }
+
+      [data-composition-id="scene5-cta"] .cta-eyebrow {
+        font-size: 22px;
+        font-weight: 600;
+        color: #0066FF;
+        letter-spacing: 0.35em;
+        margin-bottom: 20px;
+        opacity: 0;
+        transform: translateX(-30px);
+      }
+
+      [data-composition-id="scene5-cta"] .cta-headline-wrap {
+        overflow: hidden;
+      }
+
+      [data-composition-id="scene5-cta"] .cta-headline {
+        font-size: 160px;
+        font-weight: 900;
+        color: white;
+        letter-spacing: -0.04em;
+        line-height: 0.95;
+        opacity: 0;
+        transform: translateY(80px);
+      }
+
+      [data-composition-id="scene5-cta"] .cta-headline-blue {
+        color: #0066FF;
+      }
+
+      [data-composition-id="scene5-cta"] .underline-bar {
+        height: 6px;
+        width: 0px;
+        background: linear-gradient(90deg, #0066FF, rgba(0,102,255,0.3));
+        border-radius: 3px;
+        margin-top: 20px;
+        margin-bottom: 32px;
+      }
+
+      [data-composition-id="scene5-cta"] .cta-sub {
+        font-size: 36px;
+        font-weight: 500;
+        color: rgba(255,255,255,0.6);
+        letter-spacing: 0.05em;
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      [data-composition-id="scene5-cta"] .product-badge {
+        position: absolute;
+        top: 280px;
+        right: 140px;
+        text-align: right;
+        opacity: 0;
+      }
+
+      [data-composition-id="scene5-cta"] .badge-model {
+        font-size: 72px;
+        font-weight: 900;
+        color: white;
+        letter-spacing: -0.02em;
+        border-bottom: 3px solid #0066FF;
+        padding-bottom: 10px;
+        margin-bottom: 16px;
+      }
+
+      [data-composition-id="scene5-cta"] .badge-spec {
+        font-size: 24px;
+        font-weight: 500;
+        color: rgba(255,255,255,0.5);
+        letter-spacing: 0.08em;
+      }
+
+      [data-composition-id="scene5-cta"] .url-pill-wrap {
+        position: absolute;
+        bottom: 120px;
+        right: 140px;
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      [data-composition-id="scene5-cta"] .url-pill {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        background: rgba(0, 102, 255, 0.12);
+        border: 1px solid rgba(0, 102, 255, 0.4);
+        border-radius: 100px;
+        padding: 14px 32px;
+      }
+
+      [data-composition-id="scene5-cta"] .url-dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: #0066FF;
+        display: inline-block;
+        flex-shrink: 0;
+      }
+
+      [data-composition-id="scene5-cta"] .url-text {
+        font-size: 32px;
+        font-weight: 600;
+        color: white;
+        letter-spacing: 0.04em;
+      }
+    </style>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <script>
+      (function () {
+        const tl = gsap.timeline({ paused: true });
+
+        const bgGlow = document.querySelector(".bg-glow");
+        const particles = document.querySelectorAll(".p");
+        const eyebrow = document.querySelector(".cta-eyebrow");
+        const headlines = document.querySelectorAll(".cta-headline");
+        const underline = document.querySelector(".underline-bar");
+        const ctaSub = document.querySelector(".cta-sub");
+        const productBadge = document.querySelector(".product-badge");
+        const urlPill = document.querySelector(".url-pill-wrap");
+
+        // Background glow blooms in
+        tl.to(bgGlow, { opacity: 1, scale: 1.2, duration: 1.2, ease: "power2.out" }, 0);
+
+        // Particles fade in with deterministic opacities
+        const pOpacities = [0.7, 0.8, 0.65, 0.9, 0.75, 0.6, 0.85, 0.7];
+        const pDelays    = [0.20, 0.28, 0.36, 0.44, 0.52, 0.60, 0.68, 0.76];
+        particles.forEach(function(p, i) {
+          tl.to(p, { opacity: pOpacities[i], duration: 0.4 }, pDelays[i]);
+        });
+
+        // Eyebrow slides in
+        tl.to(eyebrow, { opacity: 1, x: 0, duration: 0.5, ease: "power3.out" }, 0.2);
+
+        // "Lock On." slams up
+        tl.to(headlines[0], { opacity: 1, y: 0, duration: 0.6, ease: "expo.out" }, 0.5);
+
+        // "Speed Up." slams up
+        tl.to(headlines[1], { opacity: 1, y: 0, duration: 0.6, ease: "expo.out" }, 0.8);
+
+        // Underline shoots across
+        tl.to(underline, { width: 680, duration: 0.6, ease: "power3.out" }, 1.2);
+
+        // Sub text slides up
+        tl.to(ctaSub, { opacity: 1, y: 0, duration: 0.5, ease: "power3.out" }, 1.5);
+
+        // Product badge fades in from right
+        tl.fromTo(productBadge, { opacity: 0, x: 40 }, { opacity: 1, x: 0, duration: 0.7, ease: "power3.out" }, 0.9);
+
+        // URL pill rises
+        tl.to(urlPill, { opacity: 1, y: 0, duration: 0.6, ease: "back.out(1.3)" }, 2.0);
+
+        // Pulse on URL pill at t=4
+        tl.to(urlPill, { scale: 1.04, duration: 0.2, ease: "power2.out" }, 4.0);
+        tl.to(urlPill, { scale: 1.0, duration: 0.2, ease: "power2.in" }, 4.2);
+
+        // Glow pulses once more
+        tl.to(bgGlow, { opacity: 0.7, duration: 0.3, ease: "power2.in" }, 4.8);
+        tl.to(bgGlow, { opacity: 1, duration: 0.4, ease: "power2.out" }, 5.1);
+
+        window.__timelines = window.__timelines || {};
+        window.__timelines["scene5-cta"] = tl;
+      })();
+    </script>
+  </div>
+</template>

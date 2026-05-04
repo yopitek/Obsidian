@@ -1,0 +1,6 @@
+.obsidian/
+.trash/
+*.pdf
+*.epub
+attachments/
+.cache/

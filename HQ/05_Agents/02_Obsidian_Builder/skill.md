@@ -1,4 +1,19 @@
+---
+title: "Obsidian Builder Skills"
+created: 2026-05-02
+type: skill
+summary: "Obsidian 知識存入與管理技能。"
+---
+
 # Obsidian Builder — 知識存入技能
+
+## 可用工具
+- Read / Write / Edit（vault 操作）
+- Glob（確認筆記存在）
+- Grep（搜尋相關既有筆記以建立 backlinks）
+
+## 相關工具與資源
+- [[../../10_resources/01_Tools_and_Skills/01_Obsidian_Builder|相關工具與資源]]
 
 ## When to use
 
@@ -18,13 +33,7 @@
 
 ```
 ✅ 已存入 Obsidian
-路徑：/Users/benny/Downloads/n8n_project/obsidian/Obsidian/HQ/[路徑]
+路徑：/Users/goooolai/Downloads/n8n_project/25_Obsidian/Obsidian/HQ/[路徑]
 類型：[每日日誌 / 專案筆記 / 研究報告]
 建立雙向連結：[[連結1]], [[連結2]]
 ```
-
-## APIs & Tools used
-
-- Read / Write / Edit（vault 操作）
-- Glob（確認筆記存在）
-- Grep（搜尋相關既有筆記以建立 backlinks）

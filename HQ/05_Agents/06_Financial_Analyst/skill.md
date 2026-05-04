@@ -1,4 +1,16 @@
+---
+title: "Financial Analyst Skills"
+created: 2026-05-02
+type: skill
+summary: "市場財務分析與股價數據追蹤技能。"
+---
+
 # Financial Analyst — 市場財務分析技能
+
+## 可用工具
+- Brave Search API（市場新聞）
+- Bash + yfinance（股價數據）
+- WebSearch（補充即時資訊）
 
 ## When to use
 
@@ -30,9 +42,3 @@
 ### 對 yupitek 採購策略的意涵
 [分析說明]
 ```
-
-## APIs & Tools used
-
-- Brave Search API（市場新聞）
-- Bash + yfinance（股價數據）
-- WebSearch（補充即時資訊）

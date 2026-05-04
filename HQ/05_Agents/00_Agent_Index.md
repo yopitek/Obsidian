@@ -7,20 +7,27 @@
 
 ## 📋 Agent 總覽
 
+每個 Agent 資料夾均採用 **5 檔案標準架構**：
+1. `agent.md`：核心職能與角色定義 (System Prompt)
+2. `skill.md`：技能矩陣與工具連結 (連至 10_resources)
+3. `index.md`：資料夾入口導覽 (MOC)
+4. `CLAUDE.md`：操作規則與工作流程 (Rules)
+5. `soul.md`：人格特質與溝通風格 (Soul)
+
 | # | Agent | 職責 | 狀態 | 連結 |
 |---|------|------|------|------|
-| 01 | Orchestrator | 任務協調 | ✅ 運行中 | [[01_orchestrator/agent]] |
-| 02 | Obsidian Builder | 知識管理 | ✅ 運行中 | [[02_Obsidian_Builder/agent]] |
-| 03 | Art Expert | 視覺設計 | ✅ 運行中 | [[03_Art_Expert/agent]] |
-| 04 | Video Director | 影片腳本 | ✅ 運行中 | [[04_Video_Director/agent]] |
-| 05 | Content Writer | 文案寫作 | ✅ 運行中 | [[05_Content_Writer/agent]] |
-| 06 | Financial Analyst | 財務分析 | ✅ 運行中 | [[06_Financial_Analyst/agent]] |
-| 07 | Market Researcher | 市場研究 | ✅ 運行中 | [[07_Market_Researcher/agent]] |
-| 08 | Software Engineer | 技術開發 | ✅ 運行中 | [[08_Software_Engineer/agent]] |
-| 09 | Data Engineer | 資料工程 | ✅ 運行中 | [[09_Data_Engineer/agent]] |
-| 10 | Social Publisher | 社群發布 | ✅ 運行中 | [[10_social_publisher/agent]] |
-| 11 | Report Designer | 報告設計 | ✅ 運行中 | [[11_Report_Designer/agent]] |
-| 12 | Quality Assurance | 品質檢驗 | ✅ 運行中 | [[12_Quality_Assurance/agent]] |
+| 01 | Orchestrator | 任務協調 | ✅ 運行中 | [[01_orchestrator/index]] |
+| 02 | Obsidian Builder | 知識管理 | ✅ 運行中 | [[02_Obsidian_Builder/index]] |
+| 03 | Art Expert | 視覺設計 | ✅ 運行中 | [[03_Art_Expert/index]] |
+| 04 | Video Director | 影片腳本 | ✅ 運行中 | [[04_Video_Director/index]] |
+| 05 | Content Writer | 文案寫作 | ✅ 運行中 | [[05_Content_Writer/index]] |
+| 06 | Financial Analyst | 財務分析 | ✅ 運行中 | [[06_Financial_Analyst/index]] |
+| 07 | Market Researcher | 市場研究 | ✅ 運行中 | [[07_Market_Researcher/index]] |
+| 08 | Software Engineer | 技術開發 | ✅ 運行中 | [[08_Software_Engineer/index]] |
+| 09 | Data Engineer | 資料工程 | ✅ 運行中 | [[09_Data_Engineer/index]] |
+| 10 | Social Publisher | 社群發布 | ✅ 運行中 | [[10_social_publisher/index]] |
+| 11 | Report Designer | 報告設計 | ✅ 運行中 | [[11_Report_Designer/index]] |
+| 12 | Quality Assurance | 品質檢驗 | ✅ 運行中 | [[12_Quality_Assurance/index]] |
 
 ---
 

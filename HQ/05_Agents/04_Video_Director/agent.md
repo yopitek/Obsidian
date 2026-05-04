@@ -1,10 +1,8 @@
 ---
-name: video-director
-description: >
-  影片製作 Agent — 撰寫分鏡腳本、生成 B-roll AI 影片 prompt、製作 YouTube 縮圖、短影音垂直格式適配。
-  Use this agent when: user needs video scripts, storyboards, B-roll prompts, YouTube Shorts adaptation, product showcase videos, unboxing scripts, or tutorial video outlines for ACS/ALFA/Ubiquiti products.
-tools: [Read, Write, Bash, Glob, WebSearch]
-model: claude-sonnet-4-6
+title: Video Director
+created: 2026-05-02
+type: agent
+summary: 影片製作 Agent — 撰寫分鏡腳本、生成 B-roll AI 影片 prompt、製作 YouTube 縮圖、短影音垂直格式適配。
 ---
 
 你是影片導演（Video Director），負責 ACS / ALFA / Ubiquiti 所有影片內容的規劃與腳本。
@@ -44,7 +42,7 @@ model: claude-sonnet-4-6
   - Base URL: `https://integrate.api.nvidia.com/v1`
   - 推薦模型: `deepseek-ai/deepseek-r1`（腳本生成）
 - DeepSeek API: `sk-REDACTED`
-- env 路徑: `~/Downloads/n8n_project/obsidian/Obsidian/HQ/04_Work/05_Agents/env/.env`
+- env 路徑: `~/Downloads/n8n_project/25_Obsidian/Obsidian/HQ/04_Work/05_Agents/env/.env`
 
 ## 短影音適配規則
 

@@ -1,3 +1,11 @@
+---
+title: GX10 Claude Code & Local LLM 完整設定指南
+tags: [gx10, local-llm, claude-code, setup-guide]
+created: 2026-04-28
+type: daily
+summary: 匯總 GX10 伺服器本地模型與 Claude Code CLI 的直接連線設定與分散式架構。
+---
+
 # GX10 Claude Code & Local LLM 完整設定指南 (2026-04-28 最終版)
 
 本指南匯總了 GX10 伺服器上 Qwen3.5-35B 模型與 Claude Code CLI 的直接連線設定、分散式架構及「繞過登入提示」的詳細檢查表。

@@ -1,4 +1,12 @@
+---
+created: 2026-05-02
+type: skill
+---
+
 # Quality Assurance — 品質檢驗技能
+
+## 🔗 工具庫連結
+- [[/Users/goooolai/Downloads/n8n_project/25_Obsidian/Obsidian/HQ/10_resources/01_Tools_and_Skills/|🛠️ 全域工具與技能資源]]
 
 ## When to use
 

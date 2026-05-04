@@ -1,0 +1,245 @@
+<template id="scene3-specs-template">
+  <div
+    data-composition-id="scene3-specs"
+    data-width="1920"
+    data-height="1080"
+    data-duration="8"
+  >
+    <div class="canvas">
+      <!-- Background -->
+      <svg class="bg-grid" viewBox="0 0 1920 1080" width="1920" height="1080">
+        <defs>
+          <pattern id="grid3" width="60" height="60" patternUnits="userSpaceOnUse">
+            <path d="M 60 0 L 0 0 0 60" fill="none" stroke="rgba(0,102,255,0.06)" stroke-width="1"/>
+          </pattern>
+        </defs>
+        <rect width="1920" height="1080" fill="url(#grid3)"/>
+      </svg>
+
+      <!-- Directional beam SVG (center) -->
+      <div class="beam-container">
+        <svg class="beam-svg" viewBox="0 0 600 500" width="600" height="500">
+          <!-- Antenna base (placeholder, hidden by product image below) -->
+          <rect class="beam-antenna" x="260" y="220" width="80" height="120" rx="8" fill="transparent" stroke="none"/>
+          <!-- Beam arcs (directional, emanating left from antenna face) -->
+          <path class="beam-arc beam-arc1" d="M 260 280 Q 160 240 120 200 Q 160 240 120 360 Q 160 320 260 280" fill="rgba(0,102,255,0.08)" stroke="rgba(0,102,255,0.5)" stroke-width="1.5"/>
+          <path class="beam-arc beam-arc2" d="M 260 280 Q 100 220 40 160 Q 100 240 40 400 Q 100 340 260 280" fill="rgba(0,102,255,0.05)" stroke="rgba(0,102,255,0.35)" stroke-width="1.5"/>
+          <path class="beam-arc beam-arc3" d="M 260 280 Q 50 200 -20 120 Q 60 240 -20 440 Q 60 360 260 280" fill="rgba(0,102,255,0.03)" stroke="rgba(0,102,255,0.2)" stroke-width="1"/>
+          <!-- Center beam line -->
+          <line class="beam-center" x1="260" y1="280" x2="20" y2="280" stroke="#0066FF" stroke-width="2" stroke-dasharray="8 5"/>
+          <!-- Signal dots -->
+          <circle class="signal-dot sd1" cx="200" cy="280" r="5" fill="#0066FF"/>
+          <circle class="signal-dot sd2" cx="140" cy="280" r="4" fill="#0066FF"/>
+          <circle class="signal-dot sd3" cx="80" cy="280" r="3" fill="#0066FF"/>
+          <!-- 7dBi label -->
+          <text class="gain-label" x="60" y="260" text-anchor="middle" fill="#0066FF" font-size="20" font-weight="800" font-family="Inter,sans-serif">7 dBi</text>
+        </svg>
+        <!-- Real product image overlaid at beam origin -->
+        <img class="beam-product-img" src="../assets/apa-m04.png" alt="APA-M04" />
+      </div>
+
+      <!-- Scene title -->
+      <div class="scene-title">TECHNICAL SPECS</div>
+
+      <!-- Spec cards -->
+      <div class="spec-card card1">
+        <div class="spec-value">7 dBi</div>
+        <div class="spec-label">High Gain</div>
+      </div>
+
+      <div class="spec-card card2">
+        <div class="spec-value">2.4 GHz</div>
+        <div class="spec-label">Frequency Band</div>
+      </div>
+
+      <div class="spec-card card3">
+        <div class="spec-value">Directional</div>
+        <div class="spec-label">Panel Antenna</div>
+      </div>
+
+      <div class="spec-card card4">
+        <div class="spec-value">RP-SMA</div>
+        <div class="spec-label">Male Connector</div>
+      </div>
+
+      <div class="spec-card card5">
+        <div class="spec-value">120×90mm</div>
+        <div class="spec-label">Compact Size</div>
+      </div>
+
+      <div class="spec-card card6">
+        <div class="spec-value">802.11 b/g/n</div>
+        <div class="spec-label">Wi-Fi Standard</div>
+      </div>
+    </div>
+
+    <style>
+      [data-composition-id="scene3-specs"] .canvas {
+        width: 1920px;
+        height: 1080px;
+        background: #050508;
+        position: relative;
+        overflow: hidden;
+        font-family: "Inter", sans-serif;
+      }
+
+      [data-composition-id="scene3-specs"] .bg-grid {
+        position: absolute;
+        top: 0; left: 0;
+        opacity: 1;
+      }
+
+      [data-composition-id="scene3-specs"] .scene-title {
+        position: absolute;
+        top: 80px;
+        left: 0; right: 0;
+        text-align: center;
+        font-size: 22px;
+        font-weight: 600;
+        color: #0066FF;
+        letter-spacing: 0.3em;
+        opacity: 0;
+      }
+
+      [data-composition-id="scene3-specs"] .beam-container {
+        position: absolute;
+        left: 560px;
+        top: 240px;
+        opacity: 0;
+        width: 800px;
+        height: 500px;
+      }
+
+      [data-composition-id="scene3-specs"] .beam-product-img {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 220px;
+        height: auto;
+        object-fit: contain;
+        filter: drop-shadow(0 0 30px rgba(0,102,255,0.6)) drop-shadow(0 10px 40px rgba(0,0,0,0.9));
+        z-index: 2;
+      }
+
+      [data-composition-id="scene3-specs"] .beam-arc {
+        opacity: 0;
+        transform-origin: 260px 280px;
+      }
+
+      [data-composition-id="scene3-specs"] .beam-center {
+        opacity: 0;
+        stroke-dashoffset: 200;
+      }
+
+      [data-composition-id="scene3-specs"] .signal-dot {
+        opacity: 0;
+      }
+
+      [data-composition-id="scene3-specs"] .gain-label {
+        opacity: 0;
+      }
+
+      /* Spec cards — 3 on each side */
+      [data-composition-id="scene3-specs"] .spec-card {
+        position: absolute;
+        width: 320px;
+        padding: 28px 32px;
+        background: rgba(10, 10, 31, 0.9);
+        border: 1px solid rgba(0, 102, 255, 0.3);
+        border-radius: 16px;
+        opacity: 0;
+        transform: translateY(30px);
+      }
+
+      [data-composition-id="scene3-specs"] .spec-value {
+        font-size: 52px;
+        font-weight: 900;
+        color: white;
+        letter-spacing: -0.02em;
+        line-height: 1;
+      }
+
+      [data-composition-id="scene3-specs"] .spec-label {
+        font-size: 20px;
+        font-weight: 500;
+        color: #0066FF;
+        letter-spacing: 0.05em;
+        margin-top: 8px;
+      }
+
+      /* Left column positions */
+      [data-composition-id="scene3-specs"] .card1 { left: 80px;  top: 160px; }
+      [data-composition-id="scene3-specs"] .card2 { left: 80px;  top: 400px; }
+      [data-composition-id="scene3-specs"] .card3 { left: 80px;  top: 640px; }
+
+      /* Right column positions */
+      [data-composition-id="scene3-specs"] .card4 { right: 80px; top: 160px; }
+      [data-composition-id="scene3-specs"] .card5 { right: 80px; top: 400px; }
+      [data-composition-id="scene3-specs"] .card6 { right: 80px; top: 640px; }
+    </style>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <script>
+      (function () {
+        const tl = gsap.timeline({ paused: true });
+
+        const title = document.querySelector(".scene-title");
+        const beamContainer = document.querySelector(".beam-container");
+        const arcs = document.querySelectorAll(".beam-arc");
+        const centerLine = document.querySelector(".beam-center");
+        const dots = document.querySelectorAll(".signal-dot");
+        const gainLabel = document.querySelector(".gain-label");
+        const cards = document.querySelectorAll(".spec-card");
+
+        // Title fades in
+        tl.to(title, { opacity: 1, duration: 0.4, ease: "power2.out" }, 0);
+
+        // Beam container appears
+        tl.to(beamContainer, { opacity: 1, duration: 0.4, ease: "power2.out" }, 0.2);
+
+        // Beam arcs expand from antenna (staggered)
+        arcs.forEach((arc, i) => {
+          tl.to(arc, { opacity: 1, scaleX: 1, duration: 0.5, ease: "power3.out" }, 0.3 + i * 0.15);
+        });
+
+        // Center dashed line draws in
+        tl.to(centerLine, { opacity: 1, strokeDashoffset: 0, duration: 0.6, ease: "none" }, 0.4);
+
+        // Signal dots pulse in left to right
+        dots.forEach((dot, i) => {
+          tl.to(dot, { opacity: 1, scale: 1.3, duration: 0.2, ease: "power2.out" }, 0.8 + i * 0.15);
+          tl.to(dot, { scale: 1.0, duration: 0.15, ease: "power2.in" }, 1.0 + i * 0.15);
+        });
+
+        // Gain label appears
+        tl.to(gainLabel, { opacity: 1, duration: 0.4, ease: "power2.out" }, 1.0);
+
+        // Spec cards cascade in — left column then right
+        tl.to(cards[0], { opacity: 1, y: 0, duration: 0.5, ease: "back.out(1.4)" }, 1.2);
+        tl.to(cards[3], { opacity: 1, y: 0, duration: 0.5, ease: "back.out(1.4)" }, 1.4);
+        tl.to(cards[1], { opacity: 1, y: 0, duration: 0.5, ease: "back.out(1.4)" }, 1.8);
+        tl.to(cards[4], { opacity: 1, y: 0, duration: 0.5, ease: "back.out(1.4)" }, 2.0);
+        tl.to(cards[2], { opacity: 1, y: 0, duration: 0.5, ease: "back.out(1.4)" }, 2.4);
+        tl.to(cards[5], { opacity: 1, y: 0, duration: 0.5, ease: "back.out(1.4)" }, 2.6);
+
+        // Beam pulse loop (at 4s)
+        tl.to(arcs, { opacity: 0.3, duration: 0.3, stagger: 0.05, ease: "power2.in" }, 4.5);
+        tl.to(arcs, { opacity: 1, duration: 0.4, stagger: 0.05, ease: "power2.out" }, 4.9);
+
+        // Signal dots travel outward (repeat)
+        dots.forEach((dot, i) => {
+          tl.to(dot, { opacity: 0.4, duration: 0.2 }, 5.0 + i * 0.1);
+          tl.to(dot, { opacity: 1.0, duration: 0.2 }, 5.3 + i * 0.1);
+        });
+
+        // Exit
+        tl.to(Array.from(cards), { opacity: 0, y: -20, duration: 0.3, stagger: 0.04, ease: "power2.in" }, 7.4);
+        tl.to([beamContainer, title], { opacity: 0, duration: 0.3, ease: "power2.in" }, 7.5);
+
+        window.__timelines = window.__timelines || {};
+        window.__timelines["scene3-specs"] = tl;
+      })();
+    </script>
+  </div>
+</template>

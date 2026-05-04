@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <title>ALFA APA-M04 — 30s Product Promo</title>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800;900&display=block"
+      rel="stylesheet"
+    />
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body {
+        margin: 0;
+        width: 1920px;
+        height: 1080px;
+        overflow: hidden;
+        background: #050508;
+        font-family: "Inter", sans-serif;
+      }
+      .scene {
+        position: absolute;
+        top: 0; left: 0;
+        width: 100%; height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      id="root"
+      data-composition-id="main"
+      data-start="0"
+      data-duration="30"
+      data-width="1920"
+      data-height="1080"
+    >
+      <!-- Scene 1: Hook 0–5s -->
+      <div
+        id="scene-1"
+        class="scene"
+        data-composition-id="scene1-hook"
+        data-composition-src="compositions/scene1-hook.html"
+        data-start="0"
+        data-duration="5"
+        data-track-index="1"
+        data-width="1920"
+        data-height="1080"
+      ></div>
+
+      <!-- Scene 2: Product Reveal 5–10s -->
+      <div
+        id="scene-2"
+        class="scene"
+        data-composition-id="scene2-reveal"
+        data-composition-src="compositions/scene2-reveal.html"
+        data-start="5"
+        data-duration="5"
+        data-track-index="1"
+        data-width="1920"
+        data-height="1080"
+      ></div>
+
+      <!-- Scene 3: Spec Showcase 10–18s -->
+      <div
+        id="scene-3"
+        class="scene"
+        data-composition-id="scene3-specs"
+        data-composition-src="compositions/scene3-specs.html"
+        data-start="10"
+        data-duration="8"
+        data-track-index="1"
+        data-width="1920"
+        data-height="1080"
+      ></div>
+
+      <!-- Scene 4: Use Cases 18–24s -->
+      <div
+        id="scene-4"
+        class="scene"
+        data-composition-id="scene4-usecases"
+        data-composition-src="compositions/scene4-usecases.html"
+        data-start="18"
+        data-duration="6"
+        data-track-index="1"
+        data-width="1920"
+        data-height="1080"
+      ></div>
+
+      <!-- Scene 5: CTA 24–30s -->
+      <div
+        id="scene-5"
+        class="scene"
+        data-composition-id="scene5-cta"
+        data-composition-src="compositions/scene5-cta.html"
+        data-start="24"
+        data-duration="6"
+        data-track-index="1"
+        data-width="1920"
+        data-height="1080"
+      ></div>
+    </div>
+
+    <script>
+      window.__timelines = window.__timelines || {};
+      const mainTl = gsap.timeline({ paused: true });
+
+      // Flash-white transition: scene1 → scene2 at t=5
+      mainTl.to("#scene-1", { opacity: 0, duration: 0.3, ease: "power2.in" }, 4.7);
+      mainTl.fromTo("#scene-2", { opacity: 0 }, { opacity: 1, duration: 0.3, ease: "power2.out" }, 5.0);
+
+      // Dissolve: scene2 → scene3 at t=10
+      mainTl.to("#scene-2", { opacity: 0, duration: 0.4, ease: "power2.in" }, 9.6);
+      mainTl.fromTo("#scene-3", { opacity: 0 }, { opacity: 1, duration: 0.4, ease: "power2.out" }, 10.0);
+
+      // Dissolve: scene3 → scene4 at t=18
+      mainTl.to("#scene-3", { opacity: 0, duration: 0.4, ease: "power2.in" }, 17.6);
+      mainTl.fromTo("#scene-4", { opacity: 0 }, { opacity: 1, duration: 0.4, ease: "power2.out" }, 18.0);
+
+      // Cinematic zoom out: scene4 → scene5 at t=24
+      mainTl.to("#scene-4", { opacity: 0, scale: 1.08, duration: 0.5, ease: "power2.in" }, 23.5);
+      mainTl.fromTo("#scene-5", { opacity: 0, scale: 0.96 }, { opacity: 1, scale: 1, duration: 0.5, ease: "power3.out" }, 24.0);
+
+      window.__timelines["main"] = mainTl;
+    </script>
+  </body>
+</html>

@@ -1,4 +1,20 @@
+---
+title: "Video Director Skills"
+created: 2026-05-02
+type: skill
+summary: "影片腳本生成與短影音適配技能。"
+---
+
 # Video Director — 影片腳本生成技能
+
+## 可用工具
+- DeepSeek API（腳本撰寫）
+- Nvidia API（複雜推理版本）
+- WebSearch（產品規格查詢）
+- Read（讀取品牌風格指南）
+
+## 相關工具與資源
+- [[../../10_resources/01_Tools_and_Skills/02_Video_Director|相關工具與資源]]
 
 ## When to use
 
@@ -32,10 +48,3 @@
 ### 縮圖設計需求
 → 轉交 art-expert
 ```
-
-## APIs & Tools used
-
-- DeepSeek API（腳本撰寫）
-- Nvidia API（複雜推理版本）
-- WebSearch（產品規格查詢）
-- Read（讀取品牌風格指南）

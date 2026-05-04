@@ -1,4 +1,17 @@
+---
+title: "Art Expert Skills"
+created: 2026-05-02
+type: skill
+summary: "視覺素材生成與品牌視覺維護技能。"
+---
+
 # Art Expert — 視覺素材生成技能
+
+## 可用工具
+- HuggingFace API（`hf_REDACTED`）
+- Canva MCP（mcp__Canva__generate-design）
+- Read（讀取 10_resources/design-md/ 品牌參考）
+- Write（儲存 prompt 記錄）
 
 ## When to use
 
@@ -29,10 +42,3 @@
 **生成 Prompt：**
 [完整 prompt 記錄]
 ```
-
-## APIs & Tools used
-
-- HuggingFace API（`hf_REDACTED`）
-- Canva MCP（mcp__Canva__generate-design）
-- Read（讀取 10_resources/design-md/ 品牌參考）
-- Write（儲存 prompt 記錄）

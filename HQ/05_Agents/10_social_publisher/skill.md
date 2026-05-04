@@ -1,4 +1,12 @@
+---
+created: 2026-05-02
+type: skill
+---
+
 # Social Publisher — 跨平台內容發布技能
+
+## 🔗 工具庫連結
+- [[/Users/goooolai/Downloads/n8n_project/25_Obsidian/Obsidian/HQ/10_resources/01_Tools_and_Skills/05_Social_Publisher/|🛠️ 社群發布工具與技能資源]]
 
 ## When to use
 
@@ -11,7 +19,7 @@
 3. **Fix or reject** — 格式不符：退回來源 agent 修正；格式正確：繼續
 4. **Check schedule** — 讀取 `10_social_publisher/schedule.md` 確認時段無衝突
 5. **Add to schedule** — 將任務寫入排程表（待發布狀態）
-6. **Publish** — 在排程時間呼叫 social-auto-upload 或平台 API 執行發布
+6. **Publish** — 在排程時間呼叫 social-auto-upload 或 platform API 執行發布
 7. **Verify** — 確認發布成功，取得貼文 URL/ID
 8. **Retry if failed** — 失敗重試最多 3 次，3 次失敗後 Telegram 通知
 9. **Log** — 呼叫 obsidian-builder 記錄發布結果到每日日誌

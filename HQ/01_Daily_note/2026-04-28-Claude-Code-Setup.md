@@ -1,3 +1,11 @@
+---
+title: Work Log: Claude Code & GX10 Local LLM Integration
+tags: [claude-code, local-llm, gx10, tailscale]
+created: 2026-04-28
+type: daily
+summary: 成功設定 Claude Code CLI 連接 GX10 本地 Qwen 模型，並解決認證衝突與登入提示。
+---
+
 # Work Log: Claude Code & GX10 Local LLM Integration (2026-04-28)
 
 ## 📝 Executive Summary

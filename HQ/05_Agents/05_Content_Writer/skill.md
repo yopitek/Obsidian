@@ -1,4 +1,20 @@
+---
+title: "Content Writer Skills"
+created: 2026-05-02
+type: skill
+summary: "多平台文案生成與 SEO 優化技能。"
+---
+
 # Content Writer — 多平台文案生成技能
+
+## 可用工具
+- Brave Search API（`BRAVE_API_REDACTED`）— 關鍵字研究
+- DeepSeek API（長文生成）
+- WebSearch（即時資訊補充）
+- Read（讀取品牌指南與既有文案）
+
+## 相關工具與資源
+- [[../../10_resources/01_Tools_and_Skills/03_Content_Writer|相關工具與資源]]
 
 ## When to use
 
@@ -32,10 +48,3 @@
 **Meta Description：** [120-160字元]
 **建議標籤：** #tag1 #tag2
 ```
-
-## APIs & Tools used
-
-- Brave Search API（`BRAVE_API_REDACTED`）— 關鍵字研究
-- DeepSeek API（長文生成）
-- WebSearch（即時資訊補充）
-- Read（讀取品牌指南與既有文案）

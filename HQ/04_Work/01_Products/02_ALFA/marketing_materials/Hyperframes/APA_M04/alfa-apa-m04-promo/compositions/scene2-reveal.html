@@ -1,0 +1,195 @@
+<template id="scene2-reveal-template">
+  <div
+    data-composition-id="scene2-reveal"
+    data-width="1920"
+    data-height="1080"
+    data-duration="5"
+  >
+    <div class="canvas">
+      <!-- Glow burst -->
+      <div class="glow-burst"></div>
+
+      <!-- Real product image (replaces SVG placeholder) -->
+      <div class="antenna-wrap">
+        <img class="product-img" src="../assets/apa-m04.png" alt="ALFA APA-M04" />
+        <!-- Blue glow ring behind product -->
+        <div class="img-glow"></div>
+      </div>
+
+      <!-- Product name -->
+      <div class="product-name-wrap">
+        <div class="product-model">APA-M04</div>
+        <div class="brand-name">ALFA NETWORK</div>
+        <div class="product-tag">2.4 GHz Directional Panel Antenna</div>
+      </div>
+
+      <!-- Blue accent lines -->
+      <div class="accent-line accent-left"></div>
+      <div class="accent-line accent-right"></div>
+    </div>
+
+    <style>
+      [data-composition-id="scene2-reveal"] .canvas {
+        width: 1920px;
+        height: 1080px;
+        background: #050508;
+        position: relative;
+        overflow: hidden;
+        font-family: "Inter", sans-serif;
+      }
+
+      [data-composition-id="scene2-reveal"] .glow-burst {
+        position: absolute;
+        left: 580px;
+        top: 100px;
+        width: 760px;
+        height: 880px;
+        background: radial-gradient(ellipse at center, rgba(0,102,255,0.25) 0%, rgba(0,102,255,0.08) 40%, transparent 70%);
+        border-radius: 50%;
+        opacity: 0;
+        pointer-events: none;
+        filter: blur(30px);
+      }
+
+      [data-composition-id="scene2-reveal"] .antenna-wrap {
+        position: absolute;
+        left: 760px;
+        top: 200px;
+        width: 400px;
+        height: 580px;
+        opacity: 0;
+        transform-origin: bottom center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      [data-composition-id="scene2-reveal"] .product-img {
+        width: 380px;
+        height: auto;
+        object-fit: contain;
+        position: relative;
+        z-index: 2;
+        filter: drop-shadow(0 0 40px rgba(0,102,255,0.5)) drop-shadow(0 20px 60px rgba(0,0,0,0.8));
+      }
+
+      [data-composition-id="scene2-reveal"] .img-glow {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 450px;
+        height: 450px;
+        background: radial-gradient(circle, rgba(0,102,255,0.25) 0%, transparent 65%);
+        border-radius: 50%;
+        z-index: 1;
+        pointer-events: none;
+      }
+
+      [data-composition-id="scene2-reveal"] .product-name-wrap {
+        position: absolute;
+        top: 260px;
+        left: 120px;
+        max-width: 600px;
+        text-align: left;
+        pointer-events: none;
+      }
+
+      [data-composition-id="scene2-reveal"] .product-model {
+        font-size: 130px;
+        font-weight: 900;
+        color: white;
+        letter-spacing: -0.04em;
+        line-height: 1;
+        opacity: 0;
+        transform: translateY(80px);
+        text-shadow: 0 0 80px rgba(0,102,255,0.4);
+      }
+
+      [data-composition-id="scene2-reveal"] .brand-name {
+        font-size: 34px;
+        font-weight: 800;
+        color: #0066FF;
+        letter-spacing: 0.2em;
+        margin-top: 10px;
+        opacity: 0;
+      }
+
+      [data-composition-id="scene2-reveal"] .product-tag {
+        font-size: 24px;
+        font-weight: 400;
+        color: rgba(255,255,255,0.5);
+        letter-spacing: 0.06em;
+        margin-top: 16px;
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      [data-composition-id="scene2-reveal"] .accent-line {
+        position: absolute;
+        top: 540px;
+        width: 600px;
+        height: 2px;
+        background: linear-gradient(90deg, transparent, #0066FF, transparent);
+        opacity: 0;
+      }
+      [data-composition-id="scene2-reveal"] .accent-left {
+        left: -600px;
+      }
+      [data-composition-id="scene2-reveal"] .accent-right {
+        right: -600px;
+        transform: scaleX(-1);
+      }
+    </style>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <script>
+      (function () {
+        const tl = gsap.timeline({ paused: true });
+
+        const glow = document.querySelector(".glow-burst");
+        const antenna = document.querySelector(".antenna-wrap");
+        const modelText = document.querySelector(".product-model");
+        const brandText = document.querySelector(".brand-name");
+        const tagText = document.querySelector(".product-tag");
+        const accentLeft = document.querySelector(".accent-left");
+        const accentRight = document.querySelector(".accent-right");
+
+        // Glow burst expands from center
+        tl.to(glow, { opacity: 1, scale: 1.5, duration: 0.8, ease: "power3.out" }, 0);
+
+        // "APA-M04" text slams in from top
+        tl.fromTo(modelText, { opacity: 0, y: -120, scale: 1.2 }, { opacity: 1, y: 0, scale: 1, duration: 0.7, ease: "expo.out" }, 0.15);
+
+        // Antenna SVG slides up
+        tl.fromTo(antenna, { opacity: 0, y: 80 }, { opacity: 1, y: 0, duration: 0.8, ease: "back.out(1.4)" }, 0.4);
+
+        // Accent lines shoot in from sides
+        tl.to([accentLeft, accentRight], { opacity: 1, duration: 0.1 }, 0.6);
+        tl.to(accentLeft, { left: 360, duration: 0.5, ease: "power3.out" }, 0.6);
+        tl.to(accentRight, { right: 360, duration: 0.5, ease: "power3.out" }, 0.6);
+
+        // Brand name fades up
+        tl.fromTo(brandText, { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.5, ease: "power3.out" }, 1.0);
+
+        // Tag fades in
+        tl.fromTo(tagText, { opacity: 0, y: 15 }, { opacity: 1, y: 0, duration: 0.5, ease: "power3.out" }, 1.4);
+
+        // Antenna subtle float (pulse once)
+        tl.to(antenna, { y: -10, duration: 0.4, ease: "power2.out" }, 2.5);
+        tl.to(antenna, { y: 0, duration: 0.4, ease: "power2.in" }, 2.9);
+
+        // Glow pulses
+        tl.to(glow, { opacity: 0.7, scale: 1.2, duration: 0.4, ease: "power2.out" }, 2.5);
+        tl.to(glow, { opacity: 1, scale: 1.5, duration: 0.4, ease: "power2.in" }, 2.9);
+
+        // Exit
+        tl.to([modelText, brandText, tagText, antenna, glow, accentLeft, accentRight],
+          { opacity: 0, duration: 0.3, stagger: 0.04, ease: "power2.in" }, 4.5);
+
+        window.__timelines = window.__timelines || {};
+        window.__timelines["scene2-reveal"] = tl;
+      })();
+    </script>
+  </div>
+</template>

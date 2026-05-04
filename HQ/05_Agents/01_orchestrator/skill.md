@@ -1,4 +1,17 @@
+---
+title: "Orchestrator Skills"
+created: 2026-05-02
+type: skill
+summary: "任務協調與 ReAct 流程技能。"
+---
+
 # Orchestrator — 任務協調技能
+
+## 可用工具
+- Agent tool（派遣所有 subagent）
+- Read（讀取 routing.md 與 skill-index.md）
+- Bash（讀取 env/.env 取得 Telegram token）
+- WebSearch（補充即時資訊）
 
 ## When to use
 
@@ -34,10 +47,3 @@
 ### Obsidian 記錄
 存入：[路徑]
 ```
-
-## APIs & Tools used
-
-- Agent tool（派遣所有 subagent）
-- Read（讀取 routing.md 與 skill-index.md）
-- Bash（讀取 env/.env 取得 Telegram token）
-- WebSearch（補充即時資訊）

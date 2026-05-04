@@ -1,3 +1,11 @@
+---
+title: baoyu-danger-gemini-web 工具驗證報告
+tags: [baoyu-skills, gemini-web, verification, tools]
+created: 2026-04-28
+type: daily
+summary: 驗證 baoyu-danger-gemini-web 工具的可用性與環境配置，確認所有核心功能正常。
+---
+
 # ✅ baoyu-danger-gemini-web 工具驗證報告
 
 > 檢查日期：2026-04-28

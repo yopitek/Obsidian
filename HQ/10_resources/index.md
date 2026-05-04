@@ -1,63 +1,84 @@
-# Resource Index: 10_resources
+# 📦 10_resources — Git 資源庫索引
 
-This directory contains a collection of skills, prompts, and tools designed to enhance AI agent capabilities, particularly for Claude Code and Gemini CLI.
-
-## 📂 Categories
-
-- [🎨 Content & Media Creation](#-content--media-creation)
-- [💻 Coding & Agent Enhancement](#-coding--agent-enhancement)
-- [✍️ Writing & Prompt Engineering](#-writing--prompt-engineering)
-- [📚 Resources & Reference](#-resources--reference)
+> 依照 05_Agents 職能分類，順序排列。
+> 最後更新：2026-05-02
 
 ---
 
-## 🎨 Content & Media Creation
-*Tools for generating visuals, presentations, and video effects.*
+## 01_General_Skills — 通用技能（跨 Agent）
+| Repo | 說明 |
+|------|------|
+| obra/superpowers | Copilot CLI 超能力技能框架 |
+| Fission-AI/OpenSpec | Agent 規格定義標準 |
+| msitarzewski/agency-agents | Agent 系統架構參考 |
+| addyosmani/agent-skills | Addy Osmani Agent 技能集 |
+| op7418/guizang-s-prompt | 圭臧 Prompt 合集 |
+| YouMind-OpenLab/awesome-nano-banana-pro-prompts | NanoBanana Pro Prompts |
+| SkyworkAI/Skywork-Skills | Skywork AI 技能集 |
+| MiniMax-AI/skills | MiniMax 技能集 |
+| zai-org/GLM-skills | GLM 技能集 |
+| forrestchang/andrej-karpathy-skills | Karpathy 風格技能集 |
 
-| Folder | Purpose | Trigger / Use Case |
-| :--- | :--- | :--- |
-| `01_content_media/huashu-design` | High-fidelity HTML prototypes & UI mockups | "Create a UI demo", "Make a prototype" |
-| `01_content_media/logo-generator-skill` | SVG logos and brand showcase images | "Design a logo", "Create brand assets" |
-| `01_content_media/Document-illustrator-skill` | Automatic document illustration generation | "Illustrate this article", "Add images to doc" |
-| `01_content_media/architecture-diagram-generator` | Professional system architecture diagrams | "Draw an architecture diagram" |
-| `01_content_media/NanoBanana-PPT-Skills` | AI-powered PPT generation with transitions | "Make a presentation", "Generate a PPT" |
-| `01_content_media/Video-Wrapper-Skills` | Variety show effects for interview videos | "Edit this video", "Add captions to video" |
-| `01_content_media/Seedance-Product-Video` | Motion graphics prompts for Seedance 2.0 | "Create a product video prompt" |
+## 02_Obsidian_Builder — 知識管理
+| Repo | 說明 |
+|------|------|
+| Obsidian_skill | Obsidian 知識庫技能 |
 
-## 💻 Coding & Agent Enhancement
-*Methodologies and skill sets to improve agent autonomy and precision.*
+## 03_Art_Expert — 視覺設計
+| Repo | 說明 |
+|------|------|
+| EvoLinkAI/awesome-gpt-image-2-prompts | GPT Image 2 Prompt 集合 |
+| op7418/logo-generator-skill | Logo 生成技能 |
+| joeseesun/qiaomu-image-generator | 圖片生成技能 |
 
-| Folder | Purpose | Trigger / Use Case |
-| :--- | :--- | :--- |
-| `02_coding_agents/superpower` | Advanced TDD/Subagent development methodology | "Starting a new project", "Need a plan" |
-| `02_coding_agents/baoyu-skills` | General efficiency skills by Baoyu | "Improve workflow", "General utility" |
-| `02_coding_agents/ljg-skills` | Custom skill set for daily efficiency | "Standard task assistance" |
-| `02_coding_agents/huashu-skills-master` | Versatile multi-purpose skill collection | "General agent enhancement" |
-| `02_coding_agents/andrej-karpathy-skills` | Karpathy-inspired agent guidelines | "Follow coding best practices" |
-| `02_coding_agents/Obsidian_skill` | Skills for managing Obsidian vaults | "Organize my notes", "Obsidian tasks" |
+## 04_Video_Director — 影片腳本
+| Repo | 說明 |
+|------|------|
+| heygen-com/hyperframes | HeyGen 影片框架 |
+| op7418/Seedance-Product-Video | Seedance 產品影片技能 |
+| op7418/Video-Wrapper-Skills | 影片包裝技能集 |
 
-## ✍️ Writing & Prompt Engineering
-*Refining AI output to be more human-like or directing generation via better prompts.*
+## 05_Content_Writer — 文案寫作
+| Repo | 說明 |
+|------|------|
+| alchaincyf/darwin-skill | Darwin 寫作技能 |
+| op7418/Document-illustrator-skill | 文件配圖技能 |
+| op7418/Humanizer-zh | 中文人性化寫作技能 |
+| joeseesun/lennys-podcast-newsletter | Newsletter/Podcast 技能 |
+| microsoft/markitdown | Markdown 轉換工具 |
+| alchaincyf/nuwa-skill | 女媧創作技能 |
+| joeseesun/qiaomu-anything-to-notebooklm | 轉換至 NotebookLM |
 
-| Folder | Purpose | Trigger / Use Case |
-| :--- | :--- | :--- |
-| `03_writing_prompts/humanizer` | Removes AI-writing markers (English) | "Make this sound natural", "Humanize text" |
-| `03_writing_prompts/Humanizer-zh` | AI writing cleanup (Simplified Chinese) | "去AI痕迹", "润色文本" |
-| `03_writing_prompts/Humanizer-zh-TW` | AI writing cleanup (Traditional Chinese) | "文章去AI化", "繁體潤色" |
-| `03_writing_prompts/stittch_design_md` | DESIGN.md spec for visual identity | "Define a design system for agents" |
-| `03_writing_prompts/awesome-nano-banana-pro-prompts` | High-quality prompt collection | "Need a better prompt for X" |
-| `03_writing_prompts/guizang-s-prompt` | Curated prompt library | "Search for specialized prompts" |
-| `03_writing_prompts/awesome-gpt-image-2-prompts-main` | Image generation prompt repository | "Generate an image prompt" |
+## 06_Software_Engineer — 技術開發
+| Repo | 說明 |
+|------|------|
+| ultraworkers/claw-code | Claw Code 開發工具 |
+| gsd-build/get-shit-done | 高效開發工作流 |
+| mattpocock/skills | TypeScript 技能集 |
+| jackwener/OpenCLI | 開放 CLI 框架 |
+| joeseesun/qiaomu-opencli-skills | 橋木 OpenCLI 技能集 |
 
-## 📚 Resources & Reference
-*Static lists and reference data.*
+## 07_Social_Publisher — 社群發布
+| Repo | 說明 |
+|------|------|
+| baoyu-skills | Baoyu 社群技能集 |
+| joeseesun/qiaomu-info-card-designer | 資訊卡片設計 |
+| joeseesun/qiaomu-mondo-poster-design | 海報設計技能 |
+| joeseesun/qiaomu-word-card | 文字卡片設計 |
 
-| File/Folder | Purpose |
-| :--- | :--- |
-| `04_reference_data/MCP_list.md` | Registry of Model Context Protocol (MCP) servers |
-| `04_reference_data/rss_feeds.md.md` | Collection of useful RSS feed URLs |
-| `04_reference_data/twitter_resource.md.md` | Curated Twitter/X learning resources |
-| `04_reference_data/github_skill` | Guidelines for GitHub-related agent tasks |
-
----
-*Note: To use a skill, navigate to its directory and check for a `SKILL.md` or `README.md` file.*
+## 08_Report_Designer — 報告設計
+| Repo | 說明 |
+|------|------|
+| VoltAgent/awesome-design-md | Design.md 資源集合 |
+| shaom/brand-to-design-md-skill | 品牌轉 Design.md 技能 |
+| google-labs-code/design.md | Google Design.md |
+| op7418/guizang-ppt-skill | 圭臧 PPT 技能 |
+| huasheng_editor | 花生編輯器 |
+| alchaincyf/huashu-design | 花叔設計技能 |
+| alchaincyf/huashu-skills | 花叔技能集 |
+| op7418/NanoBanana-PPT-Skills | NanoBanana PPT 技能 |
+| Russell-cell/PPT-Design-Prompt | PPT 設計 Prompt 集 |
+| hugohe3/ppt-master | PPT Master 模板庫 |
+| joeseesun/qiaomu-design-advisor | 設計顧問技能 |
+| joeseesun/qiaomu-skills | 橋木通用技能集 |
+| stittch_design_md | Stitch Design.md |
