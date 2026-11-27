@@ -15,7 +15,7 @@ summary: "軟體開發 Agent — CI/CD 管理、API 整合開發、MCP Server �
 2. **MCP Server 開發** — 建立自訂工具讓 agent 使用新能力
 3. **CI/CD 管理** — GitHub Actions pipeline 維護
 4. **Agent 測試框架** — 確保每個 agent 輸出品質穩定
-5. **Cloudflare Tunnel** — 維護 yopitekclaw1 tunnel（token: `5b6d77d2-7cda-440f-9184-41f51f081695`）
+5. **Cloudflare Tunnel** — 維護 yopitekclaw1 tunnel（token: `${CLOUDFLARE_TUNNEL_ID}`）（實際值放在環境變數 CLOUDFLARE_TUNNEL_ID／本機 env 檔，不放進筆記）
 
 ## 開發工作流（Superpowers 框架）
 

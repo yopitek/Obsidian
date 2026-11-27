@@ -1,11 +1,17 @@
 #!/bin/bash
 # sync.sh — copies Obsidian agent/skill files to Claude Code
-# Run from anywhere: bash ~/Downloads/n8n_project/obsidian/Obsidian/HQ/04_Work/05_Agents/10_shared_data/sync.sh
+# Run from anywhere: bash <vault>/HQ/05_Agents/13_shared_data/sync.sh
 # Compatible with macOS bash 3.2+
 
 set -e
 
-AGENTS_DIR="$HOME/Downloads/n8n_project/obsidian/Obsidian/HQ/04_Work/05_Agents"
+# Derived from this script's own location (HQ/05_Agents/13_shared_data/sync.sh),
+# so it works on every machine without a hard-coded home path.
+AGENTS_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+
+mkdir -p "$HOME/.claude/agents" "$HOME/.claude/skills"
+
+MISSING_COUNT=0
 
 echo "Syncing agents and skills to ~/.claude/ ..."
 
@@ -20,6 +26,7 @@ sync_agent() {
     echo "  ✓ agents/$name.md"
   else
     echo "  ✗ MISSING: $agent_src"
+    MISSING_COUNT=$((MISSING_COUNT + 1))
   fi
 
   if [ -f "$skill_src" ]; then
@@ -27,6 +34,7 @@ sync_agent() {
     echo "  ✓ skills/$name.md"
   else
     echo "  ✗ MISSING: $skill_src"
+    MISSING_COUNT=$((MISSING_COUNT + 1))
   fi
 }
 
@@ -42,4 +50,8 @@ sync_agent "09_Data_Engineer"   "data-engineer"
 sync_agent "10_social_publisher" "social-publisher"
 sync_agent "11_Report_Designer" "report-designer"
 
+if [ "$MISSING_COUNT" -gt 0 ]; then
+  echo "Sync FAILED: $MISSING_COUNT file(s) missing (source: $AGENTS_DIR)."
+  exit 1
+fi
 echo "Sync complete."

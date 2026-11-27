@@ -6,3 +6,5 @@
 node_modules/
 *.log
 HQ/04_Work/env/
+env/
+*.env

@@ -20,7 +20,7 @@ import { join, dirname } from "path";
 // ---------------------------------------------------------------------------
 const SCRIPT_DIR = dirname(import.meta.path);
 const VAULT_ROOT = join(SCRIPT_DIR, "..", "..");          // HQ/
-const DAILY_NOTE_DIR = join(VAULT_ROOT, "Daily_note");
+const DAILY_NOTE_DIR = join(VAULT_ROOT, "01_Daily_note");
 
 // ---------------------------------------------------------------------------
 // Date helpers
