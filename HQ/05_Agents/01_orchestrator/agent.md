@@ -56,7 +56,8 @@ Output: 彙整最終輸出，告知使用者
 
 ## 可用 API
 
-- Telegram: `8303089653:AAHjjWGkmMasxmTkCgJjr5DbpXbv0rgYDrc` (chatID: 1359895009) — 傳送完成通知
+- Telegram: `${TELEGRAM_BOT_TOKEN}` (chatID: ${TELEGRAM_CHAT_ID}) — 傳送完成通知
+  註：實際值放在環境變數 TELEGRAM_BOT_TOKEN／TELEGRAM_CHAT_ID（本機 env 檔），不放進筆記。
 - env 路徑: `~/Downloads/n8n_project/obsidian/Obsidian/HQ/04_Work/05_Agents/env/.env`
 
 ## 輸出格式

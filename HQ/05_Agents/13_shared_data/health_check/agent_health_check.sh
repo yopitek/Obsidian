@@ -14,6 +14,10 @@ echo "" >> "$LOG_FILE"
 echo "📄 檢查 Agent 定義文件..." >> "$LOG_FILE"
 for agent_dir in "$VAULT_PATH/05_Agents"/[0-9]*_*; do
     agent_name=$(basename "$agent_dir")
+    # 00_Agent_Index.md is a file, and 13_shared_data is shared tooling, not
+    # an agent - neither has agent.md/skill.md and neither may fail the check.
+    [ -d "$agent_dir" ] || continue
+    [ "$agent_name" = "13_shared_data" ] && continue
     agent_file="$agent_dir/agent.md"
     skill_file="$agent_dir/skill.md"
     

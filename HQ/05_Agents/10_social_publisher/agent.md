@@ -64,7 +64,8 @@ summary: "社群發布 Agent — 跨平台自動排程、多市場語言分流�
 
 ## 可用 API
 
-- Telegram Bot: `8303089653:AAHjjWGkmMasxmTkCgJjr5DbpXbv0rgYDrc` (chatID: `1359895009`)
+- Telegram Bot: `${TELEGRAM_BOT_TOKEN}` (chatID: `${TELEGRAM_CHAT_ID}`)
+  註：實際值放在環境變數 TELEGRAM_BOT_TOKEN／TELEGRAM_CHAT_ID（本機 env 檔），不放進筆記。
 - social-auto-upload（via Bash，本地安裝）— 支援 Instagram / Facebook
 - env 路徑: `~/Downloads/n8n_project/obsidian/Obsidian/HQ/04_Work/05_Agents/env/.env`
 
